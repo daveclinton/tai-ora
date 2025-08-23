@@ -1,12 +1,12 @@
-import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
 import { ContentBoxes } from "@/components/content-boxes";
 import { Footer } from "@/components/footer";
+import { NewHero } from "@/components/new-hero";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Navbar />
+      <NewHero />
       <HeroSection />
       <ContentBoxes />
       <Footer />

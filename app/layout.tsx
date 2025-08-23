@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Tai Ora - Truth in Beauty, Wellness with Purpose",
@@ -20,14 +21,17 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
+          html {
+            font-family: ${GeistSans.style.fontFamily};
+            --font-sans: ${GeistSans.variable};
+            --font-mono: ${GeistMono.variable};
+          }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body className="bg-white text-gray-900">
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
