@@ -29,7 +29,7 @@ export function Navbar() {
           <Link href="/pricing">Pricing</Link>
         </div>
 
-        <Button className="bg-gradient-to-r from-[#D4A33A] to-[#F5D76E] hover:from-[#B8921F] hover:to-[#D4A33A] text-white shadow-lg">
+        <Button variant="secondary" className="rounded-full">
           Let's Connect
         </Button>
       </div>
