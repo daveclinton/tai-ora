@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "./navbar";
 
 export function NewHero() {
@@ -17,15 +18,11 @@ export function NewHero() {
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
       <Navbar />
       <div className="relative z-10 container mx-auto px-4 text-center text-white flex flex-col items-center pt-32">
-        <div className="w-24 h-24 mb-32 bg-[#D4A33A] rounded-full flex items-center justify-center shadow-lg overflow-hidden">
-          <img
-            src="/logo.png"
-            alt="Company Logo"
-            className="w-full h-full object-cover"
-          />
+        <div className="w-24 h-24 mb-32 rounded-full flex items-center justify-center overflow-hidden">
+          <Image src="/logo.png" height={100} width={100} alt="Company Logo" />
         </div>
         <h1
           className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
