@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 export function NewHero() {
   return (
     <section
-      className="relative w-full flex items-center justify-center min-h-screen overflow-hidden bg-cover bg-center"
+      className="relative w-full flex items-center lg:items-start justify-center min-h-screen overflow-hidden bg-cover bg-center"
       style={{
         backgroundImage: "url('/hero.png')",
       }}
@@ -19,14 +19,14 @@ export function NewHero() {
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="absolute inset-0 bg-black/73"></div>
+      <div className="absolute inset-0 bg-teal-950/88"></div>
       <Navbar />
-      <div className="relative z-10 container mx-auto px-4 text-center text-white flex flex-col items-center">
-        <div className="w-24 h-24 rounded-full flex items-center justify-center overflow-hidden">
+      <div className="relative z-10 lg:mt-[10%] container mx-auto px-4 text-center text-white flex flex-col items-center">
+        <div className="w-24 h-24 rounded-full lg:mb-60 flex items-center justify-center overflow-hidden">
           <Image src="/logo.png" height={100} width={100} alt="Company Logo" />
         </div>
         <h1
-          className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mb-6 text-4xl font-bold trackingxw-tight sm:text-5xl md:text-6xl lg:text-7xl"
           style={{ lineHeight: 1.2 }}
         >
           Truth in Beauty -
