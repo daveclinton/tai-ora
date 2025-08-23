@@ -9,7 +9,7 @@ export function NewHero() {
       }}
     >
       <div
-        className="absolute inset-0 hidden lg:block"
+        className="absolute inset-0 hidden  lg:block"
         style={{
           backgroundImage: "url('/hero.png')",
           backgroundSize: "40%",
