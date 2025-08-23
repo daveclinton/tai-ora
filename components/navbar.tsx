@@ -17,9 +17,18 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold">
-          Tai Ora
-        </Link>
+        <div>
+          <Link href="/" className="text-2xl font-bold">
+            Tai Ora
+          </Link>
+          <div className="w-24 h-24 mb-32 bg-[#D4A33A] rounded-full flex items-center justify-center shadow-lg overflow-hidden">
+            <img
+              src="/logo.png"
+              alt="Company Logo"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
         <div className="hidden md:flex items-center space-x-8">
           <Link href="/">Home</Link>
