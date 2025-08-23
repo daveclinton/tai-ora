@@ -33,7 +33,7 @@ export function Navbar() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center space-x-8 px-6 py-3 rounded-2xl backdrop-blur-sm border border-primary/40 bg-primary/10 shadow-lg">
+        <div className="hidden md:flex items-center space-x-8 px-6 py-3 rounded-2xl backdrop-blur-sm border border-primary/40 bg-primary/10 shadow-sm">
           <Link
             href="/"
             className="px-3 py-2 rounded-lg transition-all duration-200 hover:bg-primary/30 hover:scale-105 hover:shadow-md"

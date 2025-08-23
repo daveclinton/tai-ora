@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section className="relative py-20 px-6 min-h-[80vh] flex items-center">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center opacity-80"
         style={{
           backgroundImage: `url('/hero.png?height=800&width=1200')`,
         }}
