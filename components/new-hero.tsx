@@ -10,16 +10,7 @@ export function NewHero() {
         backgroundImage: "url('/hero.png')",
       }}
     >
-      <div
-        className="absolute inset-0 hidden lg:block"
-        style={{
-          backgroundImage: "url('/hero.png')",
-          backgroundSize: "50%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-      ></div>
-      <div className="absolute inset-0 bg-teal-950/88"></div>
+      <div className="absolute inset-0 bg-teal-700/30"></div>
       <Navbar />
       <div className="relative z-10 lg:mt-[10%] container mx-auto px-4 text-center text-white flex flex-col items-center">
         <div className="w-24 h-24 rounded-full lg:mb-60 flex items-center justify-center overflow-hidden">
@@ -43,7 +34,7 @@ export function NewHero() {
           </span>
           with Purpose
         </h1>
-        <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-200">
+        <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-100">
           A Māori-led platform uniting authenticity, wellbeing and ethical
           beauty — welcoming all cultures with open hearts.{" "}
         </p>
