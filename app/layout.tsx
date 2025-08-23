@@ -18,7 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="bg-[--color-background] text-[--color-foreground]"
+    >
       <head>
         <style>{`
           html {
@@ -28,7 +31,7 @@ export default function RootLayout({
           }
         `}</style>
       </head>
-      <body className="bg-white text-gray-900">
+      <body className="min-h-screen antialiased">
         <Navbar />
         <main>{children}</main>
       </body>
