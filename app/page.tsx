@@ -3,13 +3,13 @@ import { HeroSection } from "@/components/hero-section";
 import { ContentBoxes } from "@/components/content-boxes";
 import { Footer } from "@/components/footer";
 
-export default function Variation7() {
+export default function Home() {
   return (
     <div className="min-h-screen">
-      <Navbar variant="gradient" />
-      <HeroSection variant="image" />
-      <ContentBoxes variant="image" />
-      <Footer variant="gradient" />
+      <Navbar />
+      <HeroSection />
+      <ContentBoxes />
+      <Footer />
     </div>
   );
 }
