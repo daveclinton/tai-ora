@@ -32,7 +32,6 @@ export default function RootLayout({
         `}</style>
       </head>
       <body className="min-h-screen antialiased">
-        <Navbar />
         <main>{children}</main>
       </body>
     </html>

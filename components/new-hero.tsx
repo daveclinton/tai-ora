@@ -1,3 +1,5 @@
+"use client";
+import { scrollWindowToBottom } from "@/utils/scrollToBottom";
 import { Navbar } from "./navbar";
 import { Button } from "@/components/ui/button";
 
@@ -11,7 +13,7 @@ export function NewHero() {
         }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-primary/30" />
+      <div className="absolute inset-0 bg-teal-950/80" />
 
       <Navbar />
 
@@ -61,9 +63,9 @@ export function NewHero() {
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 motion-safe:animate-bounce">
-        <a
-          href="#about"
-          className="inline-flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+        <button
+          onClick={() => scrollWindowToBottom()}
+          className="inline-flex items-center cursor-pointer justify-center p-2 rounded-full hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
           aria-label="Scroll to about section"
         >
           <svg
@@ -81,7 +83,7 @@ export function NewHero() {
               d="M19 9l-7 7-7-7"
             />
           </svg>
-        </a>
+        </button>
       </div>
     </main>
   );
