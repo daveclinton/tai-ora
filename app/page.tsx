@@ -1,6 +1,5 @@
 import { GoldenButton } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function Home() {
@@ -98,6 +97,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="w-full">
         <svg
           viewBox="0 0 1200 120"
@@ -119,6 +119,33 @@ export default function Home() {
             className="fill-teal-800"
           ></path>
         </svg>
+      </div>
+
+      <div className="w-full py-16 px-6 bg-teal-800">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-300/30 shadow-lg">
+            <img
+              src="/founder.jpg"
+              alt="Tania Pickering, Founder of Tai Ora"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <blockquote className="text-white text-xl italic mb-4 leading-relaxed">
+              "Tai Ora is designed to help people feel seen, supported and
+              empowered."
+            </blockquote>
+            <div className="text-amber-300 font-semibold text-lg">
+              - Tania Pickering
+            </div>
+            <Link
+              href="/about"
+              className="inline-block mt-4 text-teal-100 hover:text-amber-300 transition-colors"
+            >
+              Learn more about our story →
+            </Link>
+          </div>
+        </div>
       </div>
 
       <div className="w-full py-8 px-6 relative bg-teal-800">
@@ -162,8 +189,55 @@ export default function Home() {
                 <span className="block font-medium mt-4 mb-2">SoulGlo™</span>
                 Nourish your spirit with guided journeys for inner peace.
               </p>
+              <Link
+                href="/coming-soon"
+                className="mt-4 inline-block text-amber-600 hover:text-amber-700 font-medium"
+              >
+                Get early access →
+              </Link>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full py-16 px-6 bg-gradient-to-r from-amber-500/20 to-teal-600/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-light text-white mb-6 italic">
+            Guided by values, grounded in culture and wellbeing.
+          </h2>
+          <p className="text-xl text-teal-100">Created for Everyone.</p>
+        </div>
+      </div>
+
+      <div className="w-full py-16 px-6 bg-teal-800">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
+            Join Our Waitlist
+          </h2>
+          <p className="text-teal-100 mb-8 text-lg">
+            Be the first to experience our new wellbeing tools and features
+          </p>
+
+          <form className="flex flex-col md:flex-row gap-4 justify-center">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="px-4 py-3 rounded-lg border border-amber-300/30 focus:outline-none focus:ring-2 focus:ring-amber-300 bg-teal-900/50 text-white placeholder-teal-200"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="px-4 py-3 rounded-lg border border-amber-300/30 focus:outline-none focus:ring-2 focus:ring-amber-300 bg-teal-900/50 text-white placeholder-teal-200"
+              required
+            />
+            <button
+              type="submit"
+              className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-teal-900 font-semibold rounded-lg transition-colors"
+            >
+              Get Early Access
+            </button>
+          </form>
         </div>
       </div>
     </section>
