@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { GoldenButton } from "@/components/golden-button";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -112,8 +113,8 @@ export default function Navbar() {
         <div className="flex flex-col items-center justify-center h-full space-y-8">
           <div className="absolute top-20 left-10 right-10 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
 
-          <a
-            href="#"
+          <Link
+            href="/"
             className={`text-2xl font-medium tracking-wide transition-colors ${
               activePage === "HOME"
                 ? "text-amber-300 font-semibold"
@@ -122,9 +123,9 @@ export default function Navbar() {
             onClick={() => handleNavItemClick("HOME")}
           >
             HOME
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/how-it-works"
             className={`text-2xl font-medium tracking-wide transition-colors ${
               activePage === "HOW IT WORKS"
                 ? "text-amber-300 font-semibold"
@@ -133,9 +134,9 @@ export default function Navbar() {
             onClick={() => handleNavItemClick("HOW IT WORKS")}
           >
             HOW IT WORKS
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/creators"
             className={`text-2xl font-medium tracking-wide transition-colors ${
               activePage === "CREATORS"
                 ? "text-amber-300 font-semibold"
@@ -144,9 +145,9 @@ export default function Navbar() {
             onClick={() => handleNavItemClick("CREATORS")}
           >
             CREATORS
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/brand"
             className={`text-2xl font-medium tracking-wide transition-colors ${
               activePage === "BRAND"
                 ? "text-amber-300 font-semibold"
@@ -155,7 +156,7 @@ export default function Navbar() {
             onClick={() => handleNavItemClick("BRAND")}
           >
             BRAND
-          </a>
+          </Link>
           <div className="absolute bottom-40 left-10 right-10 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
 
           <div className="pt-4">

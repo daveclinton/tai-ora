@@ -6,9 +6,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      {/* Main Content */}
+
       <div className="flex flex-col min-h-screen">
-        {/* Mobile Layout */}
         <div className="lg:hidden relative min-h-screen flex flex-col">
           {/* Background Row - Image and Gradient */}
           <div className="absolute inset-0 flex">
@@ -63,7 +62,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile Bottom Image */}
         <div className="lg:hidden h-56 relative overflow-hidden">
           <img
             src="/left-hero.png"
@@ -73,9 +71,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-teal-900/40 to-transparent"></div>
         </div>
 
-        {/* Desktop Layout */}
         <div className="hidden lg:flex lg:flex-row lg:min-h-screen">
-          {/* Left Side - Image */}
           <div className="w-2/5 h-screen relative overflow-hidden">
             <img
               src="/left-hero.png"
@@ -84,13 +80,10 @@ export default function Home() {
             />
           </div>
 
-          {/* Right Side - Content with Gradient Background */}
           <div className="w-3/5 relative flex flex-col justify-center items-center px-12 py-12">
             <div className="absolute inset-0 bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70"></div>
 
-            {/* Content */}
             <div className="relative z-10 w-full max-w-xl">
-              {/* Logo with Golden Shadow */}
               <div className="mb-8 flex justify-center">
                 <div className="w-40 h-40 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative shadow-xl shadow-amber-400/70 ring-2 ring-amber-300/50">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
@@ -101,8 +94,6 @@ export default function Home() {
                   />
                 </div>
               </div>
-
-              {/* Main Content */}
               <div className="text-center">
                 <h2 className="text-white text-6xl font-light italic mb-6 leading-tight tracking-wide animate-fade-in">
                   I see you
@@ -112,8 +103,6 @@ export default function Home() {
                   A Māori-led platform uniting authenticity, wellbeing and
                   ethical beauty — welcoming all cultures with open hearts.
                 </p>
-
-                {/* CTA Buttons */}
                 <div className="flex flex-row gap-6 justify-center">
                   <GoldenButton className="py-5 text-lg px-10">
                     I'M A CREATOR
