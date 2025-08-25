@@ -3,35 +3,35 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="absolute top-0 left-0 right-0 z-10 p-6 md:p-8">
+      <nav className="absolute top-0 left-0 right-0 z-10 p-4 md:p-6">
         <div className="flex items-center justify-between">
-          <h1 className="text-white text-2xl md:text-3xl font-bold tracking-wider">
+          <h1 className="text-white text-xl md:text-2xl font-bold tracking-wider">
             TAI ORA
           </h1>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <a
               href="#"
-              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide"
+              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide text-sm"
             >
               HOME
             </a>
             <a
               href="#"
-              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide"
+              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide text-sm"
             >
               CREATORS
             </a>
             <a
               href="#"
-              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide"
+              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide text-sm"
             >
               BRAND
             </a>
             <a
               href="#"
-              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide"
+              className="text-white hover:text-gray-200 transition-colors font-medium tracking-wide text-sm"
             >
               PRICING
             </a>
@@ -41,10 +41,10 @@ export default function Home() {
 
       {/* Main Content */}
       <div className="flex flex-col min-h-screen">
-        <div className="lg:hidden relative min-h-screen flex">
-          {/* Background Row - Image Left, Faded Background Right */}
+        {/* Mobile Layout */}
+        <div className="lg:hidden relative min-h-screen flex flex-col">
+          {/* Background Row - Image and Gradient */}
           <div className="absolute inset-0 flex">
-            {/* Left Side - Image */}
             <div className="w-1/2 h-full relative overflow-hidden">
               <img
                 src="/left-hero.png"
@@ -52,42 +52,42 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Right Side - Faded Background */}
             <div className="w-1/2 h-full bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70"></div>
           </div>
 
-          {/* Overlay Content - Text and Buttons on Top */}
-          <div className="relative z-10 flex flex-col justify-center items-center px-6 py-12 w-full">
-            {/* Logo */}
-            <div className="mb-12 flex justify-center">
-              <div className="w-24 h-24 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative">
+          {/* Overlay Content */}
+          <div className="relative z-10 flex flex-col justify-center items-center px-6 py-8 w-full flex-grow">
+            {/* Logo - Increased size */}
+            <div className="mb-8 flex justify-center">
+              <div className="w-32 h-32 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
                 <img
                   src="/logo.png"
-                  alt="Portrait of a woman representing natural beauty"
+                  alt="Tai Ora logo"
                   className="w-full h-full object-cover relative z-10"
                 />
               </div>
             </div>
 
             {/* Main Content */}
-            <div className="text-center max-w-lg">
-              <h2 className="text-white text-4xl md:text-5xl font-light italic mb-8 leading-tight tracking-wide animate-fade-in drop-shadow-lg">
+            <div className="text-center max-w-md">
+              <h2 className="text-white text-4xl md:text-5xl font-light italic mb-6 leading-tight tracking-wide animate-fade-in drop-shadow-lg">
                 I see you
               </h2>
 
-              <p className="text-white text-lg mb-12 leading-relaxed drop-shadow-md">
+              <p className="text-white text-base md:text-lg mb-10 leading-relaxed drop-shadow-md">
                 A Māori-led platform uniting authenticity, wellbeing and ethical
                 beauty — welcoming all cultures with open hearts.
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col gap-4 justify-center">
-                <GoldenButton>I'M A CREATOR</GoldenButton>
+                <GoldenButton className="py-4 text-base">
+                  I'M A CREATOR
+                </GoldenButton>
                 <Button
                   variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold px-8 py-6 text-lg tracking-wide rounded-lg transition-colors bg-transparent backdrop-blur-sm"
+                  className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold px-6 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent backdrop-blur-sm"
                 >
                   I'M A BRAND
                 </Button>
@@ -96,8 +96,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile Image Section - Now Visible Below Content */}
-        <div className="lg:hidden h-64 relative overflow-hidden">
+        {/* Mobile Bottom Image */}
+        <div className="lg:hidden h-56 relative overflow-hidden">
           <img
             src="/left-hero.png"
             alt="Portrait of a woman representing natural beauty"
@@ -106,10 +106,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-teal-900/40 to-transparent"></div>
         </div>
 
-        {/* Desktop Layout - Side by Side */}
+        {/* Desktop Layout */}
         <div className="hidden lg:flex lg:flex-row lg:min-h-screen">
-          {/* Left Side - Image */}
-          <div className="lg:w-1/4 h-screen relative overflow-hidden">
+          {/* Left Side - Image - Increased width */}
+          <div className="w-2/5 h-screen relative overflow-hidden">
             <img
               src="/left-hero.png"
               alt="Portrait of a woman representing natural beauty"
@@ -117,40 +117,47 @@ export default function Home() {
             />
           </div>
 
-          {/* Right Side - Content */}
-          <div className="lg:w-3/4 bg-teal-700 flex flex-col justify-center items-center px-16 py-24">
-            {/* Logo */}
-            <div className="mb-12 flex justify-center">
-              <div className="w-24 h-24 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
-                <img
-                  src="/logo.png"
-                  alt="Portrait of a woman representing natural beauty"
-                  className="w-full h-full object-cover relative z-10"
-                />
+          {/* Right Side - Content with Gradient Background */}
+          <div className="w-3/5 relative flex flex-col justify-center items-center px-12 py-16">
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70"></div>
+
+            {/* Content */}
+            <div className="relative z-10 w-full max-w-xl">
+              {/* Logo - Increased size */}
+              <div className="mb-10 flex justify-center">
+                <div className="w-40 h-40 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
+                  <img
+                    src="/logo.png"
+                    alt="Tai Ora logo"
+                    className="w-full h-full object-cover relative z-10"
+                  />
+                </div>
               </div>
-            </div>
 
-            {/* Main Content */}
-            <div className="text-center max-w-lg">
-              <h2 className="text-white text-5xl md:text-6xl lg:text-7xl font-light italic mb-8 leading-tight tracking-wide animate-fade-in">
-                I see you
-              </h2>
+              {/* Main Content */}
+              <div className="text-center">
+                <h2 className="text-white text-6xl font-light italic mb-8 leading-tight tracking-wide animate-fade-in">
+                  I see you
+                </h2>
 
-              <p className="text-teal-100 text-lg md:text-xl mb-12 leading-relaxed">
-                A Māori-led platform uniting authenticity, wellbeing and ethical
-                beauty — welcoming all cultures with open hearts.
-              </p>
+                <p className="text-teal-100 text-xl mb-12 leading-relaxed px-4">
+                  A Māori-led platform uniting authenticity, wellbeing and
+                  ethical beauty — welcoming all cultures with open hearts.
+                </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <GoldenButton>I'M A CREATOR</GoldenButton>
-                <Button
-                  variant="outline"
-                  className="border-2 border-teal-500 text-white hover:bg-teal-600 hover:border-teal-600 font-semibold px-8 py-6 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
-                >
-                  I'M A BRAND
-                </Button>
+                {/* CTA Buttons */}
+                <div className="flex flex-row gap-6 justify-center">
+                  <GoldenButton className="py-5 text-lg px-10">
+                    I'M A CREATOR
+                  </GoldenButton>
+                  <Button
+                    variant="outline"
+                    className="border-2 border-teal-500 text-white hover:bg-teal-600 hover:border-teal-600 font-semibold px-10 py-5 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
+                  >
+                    I'M A BRAND
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -158,7 +165,7 @@ export default function Home() {
       </div>
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden fixed top-6 right-6 z-20 text-white">
+      <button className="md:hidden fixed top-5 right-5 z-20 text-white bg-black/30 p-2 rounded-full">
         <svg
           className="w-6 h-6"
           fill="none"
