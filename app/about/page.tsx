@@ -27,7 +27,7 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="px-6 py-12">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             Our Story
           </h2>
@@ -44,7 +44,7 @@ export default function AboutPage() {
 
       {/* What Tai Ora Means */}
       <section className="px-6 py-12">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             What Tai Ora Means
           </h2>
@@ -158,7 +158,7 @@ export default function AboutPage() {
 
       {/* Note from Founder */}
       <section className="px-6 py-16">
-        <div className="max-w-4xl mx-auto bg-amber-50/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/30 shadow-lg">
+        <div className="max-w-5xl mx-auto bg-amber-50/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/30 shadow-lg">
           <h2 className="text-2xl font-semibold text-amber-300 mb-6 text-center">
             A Note from Our Founder
           </h2>

@@ -24,7 +24,7 @@ export default function BrandPage() {
       </div>
 
       <section className="px-6 py-12">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             Why partner with Tai Ora?
           </h2>
@@ -45,7 +45,7 @@ export default function BrandPage() {
       </section>
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
-        <div className="max-w-4xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
+        <div className="max-w-5xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
           <h2 className="text-3xl font-light italic text-teal-800 mb-6 text-center">
             Ethical & inclusive by design
           </h2>
@@ -85,7 +85,7 @@ export default function BrandPage() {
       </section>
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
-        <div className="max-w-4xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
+        <div className="max-w-5xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
           <h2 className="text-3xl font-light italic text-teal-800 mb-8 text-center">
             Licensing options
           </h2>
