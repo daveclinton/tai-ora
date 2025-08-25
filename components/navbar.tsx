@@ -31,9 +31,12 @@ export default function Navbar() {
     <>
       <nav className="absolute top-0 left-0 right-0 z-50 p-4 md:p-6">
         <div className="flex items-center justify-between">
-          <h1 className="text-white text-xl md:text-2xl font-bold tracking-wider">
+          <Link
+            href="/"
+            className="text-white text-xl md:text-2xl font-bold tracking-wider"
+          >
             TAI ORA
-          </h1>
+          </Link>
           <div className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 space-x-20">
             <div className="absolute -bottom-3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
             <Link
@@ -111,7 +114,6 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
-
       <div
         className={`fixed inset-0 bg-gradient-to-b from-teal-900 to-amber-900 z-40 transition-opacity duration-300 md:hidden ${
           isMobileMenuOpen
