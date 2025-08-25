@@ -1,27 +1,23 @@
-import type React from "react";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
+import type React from "react";
 
-interface GoldenButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface GoldenLinkProps {
+  href: string;
   children: React.ReactNode;
   className?: string;
 }
 
-export function GoldenButton({
-  children,
-  className,
-  ...props
-}: GoldenButtonProps) {
+export function GoldenButton({ href, children, className }: GoldenLinkProps) {
   return (
-    <Button
+    <Link
+      href={href}
       className={cn(
-        "bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-black font-semibold px-8 py-6 text-lg tracking-wide rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-0",
+        "inline-flex items-center justify-center bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-black font-semibold px-8 text-lg tracking-wide rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl border-0",
         className
       )}
-      {...props}
     >
       {children}
-    </Button>
+    </Link>
   );
 }

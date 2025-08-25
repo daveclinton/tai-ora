@@ -85,8 +85,8 @@ export default function Navbar() {
             </Link>
           </div>
           <div className="hidden md:block">
-            <GoldenButton className="px-6 py-2 text-sm">
-              GET STARTED
+            <GoldenButton href="/contact" className="px-6 py-2 text-sm">
+              Let's Connect
             </GoldenButton>
           </div>
 
@@ -171,8 +171,8 @@ export default function Navbar() {
           <div className="absolute bottom-40 left-10 right-10 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
 
           <div className="pt-4">
-            <GoldenButton className="px-8 py-3 text-lg">
-              GET STARTED
+            <GoldenButton href="/contact" className="px-8 py-3 text-lg">
+              LET'S CONNECT
             </GoldenButton>
           </div>
         </div>

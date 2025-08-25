@@ -1,5 +1,7 @@
 import { GoldenButton } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,7 +41,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col gap-4 justify-center">
-              <GoldenButton className="py-4 text-base">
+              <GoldenButton href="/creators" className="py-5 text-lg px-10">
                 I'M A CREATOR
               </GoldenButton>
               <Button
@@ -74,15 +76,17 @@ export default function Home() {
             </div>
             <div className="text-center">
               <h2 className="text-white text-6xl font-light italic mb-6 leading-tight tracking-wide animate-fade-in">
-                I see you
+                I SEE YOU
               </h2>
 
               <p className="text-teal-100 text-xl mb-10 leading-relaxed px-4">
-                A Māori-led platform uniting authenticity, wellbeing and ethical
-                beauty — welcoming all cultures with open hearts.
+                A wellbeing platform built on authenticity, connection, and
+                aroha welcoming all cultures with open hearts
               </p>
               <div className="flex flex-row gap-6 justify-center">
-                <GoldenButton>I'M A CREATOR</GoldenButton>
+                <GoldenButton href="/creators" className="text-lg">
+                  I'M A CREATOR
+                </GoldenButton>
                 <Button
                   variant="outline"
                   className="border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-5 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
