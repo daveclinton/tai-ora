@@ -20,8 +20,8 @@ export default function HowItWorks() {
           How Tai Ora Works
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
-          A Māori-led platform uniting authenticity, wellbeing, and ethical
-          beauty — welcoming all cultures with open hearts.
+          A wellbeing platform built on authenticity, connection, and aroha
+          welcoming all cultures with open hearts
         </p>
       </div>
 
@@ -180,7 +180,7 @@ export default function HowItWorks() {
 
         {/* CTA Buttons */}
         <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-          <GoldenButton className="py-4 text-lg px-10">
+          <GoldenButton href="/creators" className="py-4 text-lg px-10">
             For Creators
           </GoldenButton>
           <Button

@@ -18,8 +18,8 @@ export default function BrandPage() {
           How Tai Ora Works
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
-          A Māori-led platform uniting authenticity, wellbeing, and ethical
-          beauty — welcoming all cultures with open hearts.
+          A wellbeing platform built on authenticity, connection, and aroha
+          welcoming all cultures with open hearts
         </p>
       </div>
 
