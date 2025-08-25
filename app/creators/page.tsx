@@ -24,7 +24,7 @@ export default function CreatorPage() {
       </div>
 
       <section className="px-6 py-12">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             Why Join as a Creator?
           </h2>
@@ -64,9 +64,8 @@ export default function CreatorPage() {
           <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
             How It Works
           </h2>
-
           <div className="flex flex-col md:flex-row justify-between items-center mb-16 relative">
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-amber-300/30 transform -translate-y-1/2 hidden md:block"></div>
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-amber-300/30 transform -translate-y-1/2  hidden md:block"></div>
 
             {[
               {
@@ -84,12 +83,12 @@ export default function CreatorPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="relative z-10 flex flex-col items-center mb-10 md:mb-0"
+                className="relative z-10 flex flex-col items-center mb-4"
               >
                 <div className="w-16 h-16 rounded-full bg-amber-400 flex items-center justify-center text-white text-xl font-bold mb-4 shadow-lg">
                   {item.step}
                 </div>
-                <h3 className="text-lg font-semibold text-amber-300 mb-1">
+                <h3 className="text-lg font-semibold text-amber-300 mt-4 mb-1">
                   {item.title}
                 </h3>
                 <p className="text-teal-100 text-sm">{item.desc}</p>
@@ -185,7 +184,7 @@ export default function CreatorPage() {
             passion into purpose.
           </p>
 
-          <div className="max-w-md mx-auto bg-white rounded-lg p-6 mb-6">
+          <div className="mx-auto max-w-md bg-white rounded-lg p-6 mb-6">
             <form className="space-y-4">
               <div>
                 <label className="block text-teal-800 text-sm font-medium mb-1">
