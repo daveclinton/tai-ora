@@ -36,8 +36,8 @@ export default function Home() {
             </h2>
 
             <p className="text-white text-base md:text-lg mb-8 leading-relaxed drop-shadow-md">
-              A Māori-led platform uniting authenticity, wellbeing and ethical
-              beauty — welcoming all cultures with open hearts.
+              A wellbeing platform built on authenticity, connection, and aroha
+              welcoming all cultures with open hearts
             </p>
 
             <div className="flex flex-col gap-4 justify-center">
