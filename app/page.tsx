@@ -32,7 +32,7 @@ export default function Home() {
 
           <div className="text-center max-w-md">
             <h2 className="text-white text-4xl md:text-5xl font-light italic mb-6 leading-tight tracking-wide animate-fade-in drop-shadow-lg">
-              I see you
+              I SEE YOU
             </h2>
 
             <p className="text-white text-base md:text-lg mb-8 leading-relaxed drop-shadow-md">
@@ -41,7 +41,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col gap-4 justify-center">
-              <GoldenButton href="/creators" className="py-5 text-lg px-10">
+              <GoldenButton href="/creators" className="text-lg px-10">
                 I'M A CREATOR
               </GoldenButton>
               <Button
