@@ -4,6 +4,7 @@ import { Zilla_Slab } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 const zillaSlab = Zilla_Slab({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );
