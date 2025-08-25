@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Zilla_Slab } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 const zillaSlab = Zilla_Slab({
   subsets: ["latin"],
@@ -44,7 +45,10 @@ export default function RootLayout({
         `}</style>
       </head>
       <body className="min-h-screen antialiased">
-        <main>{children}</main>
+        <main>
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );

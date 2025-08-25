@@ -1,15 +1,11 @@
 import { GoldenButton } from "@/components/golden-button";
-import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Navbar />
-
       <div className="flex flex-col min-h-screen">
         <div className="lg:hidden relative min-h-screen flex flex-col">
-          {/* Background Row - Image and Gradient */}
           <div className="absolute inset-0 flex">
             <div className="w-1/2 h-full relative overflow-hidden">
               <img
@@ -21,9 +17,7 @@ export default function Home() {
             <div className="w-1/2 h-full bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70"></div>
           </div>
 
-          {/* Overlay Content */}
           <div className="relative z-10 flex flex-col justify-center items-center px-6 py-8 w-full flex-grow">
-            {/* Logo with Golden Shadow */}
             <div className="mb-6 flex justify-center">
               <div className="w-32 h-32 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative shadow-lg shadow-amber-400/70 ring-2 ring-amber-300/50">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
@@ -35,7 +29,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Main Content */}
             <div className="text-center max-w-md">
               <h2 className="text-white text-4xl md:text-5xl font-light italic mb-6 leading-tight tracking-wide animate-fade-in drop-shadow-lg">
                 I see you
@@ -46,7 +39,6 @@ export default function Home() {
                 beauty — welcoming all cultures with open hearts.
               </p>
 
-              {/* CTA Buttons */}
               <div className="flex flex-col gap-4 justify-center">
                 <GoldenButton className="py-4 text-base">
                   I'M A CREATOR

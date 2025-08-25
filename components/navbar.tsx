@@ -1,18 +1,29 @@
 "use client";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { GoldenButton } from "@/components/golden-button";
 import Link from "next/link";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activePage, setActivePage] = useState("HOME");
+  const pathname = usePathname();
+
+  type ValidPath = "/" | "/how-it-works" | "/creators" | "/brand";
+
+  const pathToPageMap: Record<ValidPath, string> = {
+    "/": "HOME",
+    "/how-it-works": "HOW IT WORKS",
+    "/creators": "CREATORS",
+    "/brand": "BRAND",
+  };
+
+  const activePage = pathToPageMap[pathname as ValidPath] || "HOME";
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleNavItemClick = (page: string) => {
-    setActivePage(page);
+  const handleNavItemClick = () => {
     setIsMobileMenuOpen(false);
   };
 
@@ -23,54 +34,52 @@ export default function Navbar() {
           <h1 className="text-white text-xl md:text-2xl font-bold tracking-wider">
             TAI ORA
           </h1>
-          <div className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 space-x-8">
-            {/* Gold line behind nav items */}
+          <div className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 space-x-20">
             <div className="absolute -bottom-3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
-
-            <a
-              href="#"
+            <Link
+              href="/"
               className={`transition-colors font-medium tracking-wide text-sm ${
                 activePage === "HOME"
                   ? "text-amber-300 font-semibold"
                   : "text-white hover:text-amber-200"
               }`}
-              onClick={() => handleNavItemClick("HOME")}
+              onClick={handleNavItemClick}
             >
               HOME
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/how-it-works"
               className={`transition-colors font-medium tracking-wide text-sm ${
                 activePage === "HOW IT WORKS"
                   ? "text-amber-300 font-semibold"
                   : "text-white hover:text-amber-200"
               }`}
-              onClick={() => handleNavItemClick("HOW IT WORKS")}
+              onClick={handleNavItemClick}
             >
               HOW IT WORKS
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/creators"
               className={`transition-colors font-medium tracking-wide text-sm ${
                 activePage === "CREATORS"
                   ? "text-amber-300 font-semibold"
                   : "text-white hover:text-amber-200"
               }`}
-              onClick={() => handleNavItemClick("CREATORS")}
+              onClick={handleNavItemClick}
             >
               CREATORS
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/brand"
               className={`transition-colors font-medium tracking-wide text-sm ${
                 activePage === "BRAND"
                   ? "text-amber-300 font-semibold"
                   : "text-white hover:text-amber-200"
               }`}
-              onClick={() => handleNavItemClick("BRAND")}
+              onClick={handleNavItemClick}
             >
               BRAND
-            </a>
+            </Link>
           </div>
           <div className="hidden md:block">
             <GoldenButton className="px-6 py-2 text-sm">
@@ -120,7 +129,7 @@ export default function Navbar() {
                 ? "text-amber-300 font-semibold"
                 : "text-white hover:text-amber-200"
             }`}
-            onClick={() => handleNavItemClick("HOME")}
+            onClick={handleNavItemClick}
           >
             HOME
           </Link>
@@ -131,7 +140,7 @@ export default function Navbar() {
                 ? "text-amber-300 font-semibold"
                 : "text-white hover:text-amber-200"
             }`}
-            onClick={() => handleNavItemClick("HOW IT WORKS")}
+            onClick={handleNavItemClick}
           >
             HOW IT WORKS
           </Link>
@@ -142,7 +151,7 @@ export default function Navbar() {
                 ? "text-amber-300 font-semibold"
                 : "text-white hover:text-amber-200"
             }`}
-            onClick={() => handleNavItemClick("CREATORS")}
+            onClick={handleNavItemClick}
           >
             CREATORS
           </Link>
@@ -153,7 +162,7 @@ export default function Navbar() {
                 ? "text-amber-300 font-semibold"
                 : "text-white hover:text-amber-200"
             }`}
-            onClick={() => handleNavItemClick("BRAND")}
+            onClick={handleNavItemClick}
           >
             BRAND
           </Link>
