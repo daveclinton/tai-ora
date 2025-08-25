@@ -1,9 +1,21 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { Zilla_Slab } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/navbar";
+
+const zillaSlab = Zilla_Slab({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-zilla-slab",
+  weight: ["300", "400", "500", "600", "700"], // Zilla Slab has multiple weights
+});
+
+const sourceCodePro = Source_Code_Pro({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-source-code-pro",
+});
 
 export const metadata: Metadata = {
   title: "Tai Ora - Truth in Beauty, Wellness with Purpose",
@@ -20,14 +32,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-[--color-background] text-[--color-foreground]"
+      className={`${zillaSlab.variable} ${sourceCodePro.variable} bg-(--color-background) text-(--color-foreground)`}
     >
       <head>
         <style>{`
           html {
-            font-family: ${GeistSans.style.fontFamily};
-            --font-sans: ${GeistSans.variable};
-            --font-mono: ${GeistMono.variable};
+            font-family: ${zillaSlab.style.fontFamily};
+            --font-sans: ${zillaSlab.style.fontFamily};
+            --font-mono: ${sourceCodePro.style.fontFamily};
           }
         `}</style>
       </head>
