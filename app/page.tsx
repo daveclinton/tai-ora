@@ -82,9 +82,7 @@ export default function Home() {
                 beauty — welcoming all cultures with open hearts.
               </p>
               <div className="flex flex-row gap-6 justify-center">
-                <GoldenButton className="py-5 text-lg px-10">
-                  I'M A CREATOR
-                </GoldenButton>
+                <GoldenButton>I'M A CREATOR</GoldenButton>
                 <Button
                   variant="outline"
                   className="border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-5 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
