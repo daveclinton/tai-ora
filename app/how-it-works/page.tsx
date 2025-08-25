@@ -72,12 +72,12 @@ export default function HowItWorks() {
       {/* Content Sections */}
       <div className="max-w-5xl mx-auto my-16 px-6 space-y-10">
         {/* One Upload Section */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10 text-teal-100">
-          <h2 className="text-amber-300 font-semibold text-2xl italic mb-4">
+        <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
             One upload. Two outcomes.
           </h2>
-          <p className="mb-6">
-            <span className="inline-block bg-amber-200/20 border border-amber-300 text-amber-200 px-3 py-1 rounded-full font-bold text-sm">
+          <p className="mb-6 text-teal-700">
+            <span className="inline-block bg-amber-100 border border-amber-300 text-amber-700 px-3 py-1 rounded-full font-bold text-sm">
               Creators upload once
             </span>{" "}
             — sharing benefits, usage and authentic experience. Tai Ora then{" "}
@@ -85,35 +85,35 @@ export default function HowItWorks() {
           </p>
           <div className="grid md:grid-cols-2 gap-5 mb-4">
             <div>
-              <h3 className="text-amber-300 text-lg font-semibold mb-2">
+              <h3 className="text-teal-800 text-lg font-semibold mb-2">
                 VeeVu™
               </h3>
-              <p>
+              <p className="text-teal-700">
                 Short, meaningful preview cut from the journey — perfect for
                 product pages, ads, and quick decisions.
               </p>
             </div>
             <div>
-              <h3 className="text-amber-300 text-lg font-semibold mb-2">
+              <h3 className="text-teal-800 text-lg font-semibold mb-2">
                 iGlo™
               </h3>
-              <p>
+              <p className="text-teal-700">
                 The full, AI-verified journey with photos, notes, reflections,
                 and truthful results over time.
               </p>
             </div>
           </div>
-          <p className="italic mt-3">
+          <p className="italic mt-3 text-amber-600">
             Result: one video powers both discovery <strong>and</strong> trust.
           </p>
         </div>
 
         {/* Steps for Creators */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10 text-teal-100">
-          <h2 className="text-amber-300 font-semibold text-2xl italic mb-4">
+        <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
             Steps for Creators
           </h2>
-          <ol className="list-decimal list-inside space-y-2">
+          <ol className="list-decimal list-inside space-y-2 text-teal-700">
             <li>
               <strong>Record your journey</strong> — Hook → Intro → Benefits →
               Demo → CTA.
@@ -138,11 +138,11 @@ export default function HowItWorks() {
         </div>
 
         {/* What Brands Receive */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10 text-teal-100">
-          <h2 className="text-amber-300 font-semibold text-2xl italic mb-4">
+        <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
             What Brands Receive
           </h2>
-          <ul className="list-disc list-inside space-y-2">
+          <ul className="list-disc list-inside space-y-2 text-teal-700">
             <li>
               <strong>Authentic social-proof</strong> that's consented and
               creator-owned.
@@ -159,11 +159,11 @@ export default function HowItWorks() {
         </div>
 
         {/* Ethics Section */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10 text-teal-100">
-          <h2 className="text-amber-300 font-semibold text-2xl italic mb-4">
+        <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
             Ethics, Culture, and Care
           </h2>
-          <ul className="list-disc list-inside space-y-2">
+          <ul className="list-disc list-inside space-y-2 text-teal-700">
             <li>
               Māori-led foundation; we welcome all peoples and cultures with
               open hearts.
@@ -180,7 +180,7 @@ export default function HowItWorks() {
 
         {/* CTA Buttons */}
         <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-          <GoldenButton href="/creators" className="py-4 text-lg px-10">
+          <GoldenButton href="/creators" className="text-lg px-10">
             For Creators
           </GoldenButton>
           <Button

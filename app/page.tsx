@@ -128,11 +128,11 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
               <h3 className="text-2xl font-semibold text-amber-300 mb-4">
                 VeeVu™
               </h3>
-              <p className="text-teal-100 leading-relaxed">
+              <p className="text-teal-800 leading-relaxed">
                 Instantly transforms long product videos into short, powerful
                 previews that highlight what truly matters. No gimmicks — just
                 clear, authentic insights designed to save time and boost
@@ -140,11 +140,11 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
               <h3 className="text-2xl font-semibold text-amber-300 mb-4">
                 iGlo™
               </h3>
-              <p className="text-teal-100 leading-relaxed">
+              <p className="text-teal-800 leading-relaxed">
                 Lets you document your full product journey with photos, notes,
                 and reflections. Over time, it creates an AI-verified record of
                 real results — building trust, empowering your voice, and
@@ -152,11 +152,11 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
               <h3 className="text-2xl font-semibold text-amber-300 mb-4">
                 Coming Soon
               </h3>
-              <p className="text-teal-100 leading-relaxed">
+              <p className="text-teal-800 leading-relaxed">
                 <span className="block font-medium mb-2">LydiaGlo™</span>
                 Empowering recovery through healing, culture and innovation.
                 <span className="block font-medium mt-4 mb-2">SoulGlo™</span>

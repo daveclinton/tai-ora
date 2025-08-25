@@ -27,17 +27,17 @@ export default function CreatorPage() {
 
       {/* Why Join */}
       <section className="px-6 py-12">
-        <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/20 shadow-lg">
-          <h2 className="text-2xl font-semibold text-amber-300 mb-4">
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+          <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             Why Join as a Creator?
           </h2>
-          <p className="text-teal-100/90 leading-relaxed">
+          <p className="text-teal-700/90 leading-relaxed">
             As a Creator on Tai Ora, you gain the tools to monetise your
             authentic product journeys. Protect your content, license your
             verified reviews, and build lasting trust with your audience and
             brands — all from one upload that powers both{" "}
-            <span className="text-amber-300">VeeVu™</span> and{" "}
-            <span className="text-amber-300">iGlo™</span>.
+            <span className="text-amber-600">VeeVu™</span> and{" "}
+            <span className="text-amber-600">iGlo™</span>.
           </p>
         </div>
       </section>
@@ -69,12 +69,12 @@ export default function CreatorPage() {
             ].map((step, i) => (
               <div
                 key={i}
-                className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all"
+                className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all"
               >
-                <h3 className="text-xl font-semibold text-amber-300 mb-2">
+                <h3 className="text-xl font-semibold text-teal-800 mb-2">
                   {step.title}
                 </h3>
-                <p className="text-teal-100/90">{step.desc}</p>
+                <p className="text-teal-700/90">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -122,11 +122,11 @@ export default function CreatorPage() {
             Tips for Creating Videos
           </h2>
           <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold text-amber-300 mb-3">
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20">
+              <h3 className="text-xl font-semibold text-teal-800 mb-3">
                 1. Before You Film
               </h3>
-              <ul className="list-disc pl-6 space-y-1 text-teal-100/90">
+              <ul className="list-disc pl-6 space-y-1 text-teal-700/90">
                 <li>Choose a well-lit space with minimal background noise.</li>
                 <li>Keep the product packaging visible and ready to show.</li>
                 <li>
@@ -136,11 +136,11 @@ export default function CreatorPage() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-amber-300 mb-3">
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20">
+              <h3 className="text-xl font-semibold text-teal-800 mb-3">
                 2. Suggested Flow for Your Video
               </h3>
-              <ul className="list-disc pl-6 space-y-1 text-teal-100/90">
+              <ul className="list-disc pl-6 space-y-1 text-teal-700/90">
                 <li>Hook (0–5s): Exciting benefit or bold claim.</li>
                 <li>Product Intro (5–10s): Show and name product + brand.</li>
                 <li>Key Benefits (10–30s): Share 2–3 short benefits.</li>
@@ -151,11 +151,11 @@ export default function CreatorPage() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-amber-300 mb-3">
-                3. Upload Form — Don’t Skip
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20">
+              <h3 className="text-xl font-semibold text-teal-800 mb-3">
+                3. Upload Form — Don't Skip
               </h3>
-              <ul className="list-disc pl-6 space-y-1 text-teal-100/90">
+              <ul className="list-disc pl-6 space-y-1 text-teal-700/90">
                 <li>Video Title – Short, catchy, focused on benefit.</li>
                 <li>Video Description – 1–2 lines on why you love it.</li>
                 <li>Product + Brand Name – Exactly as on packaging.</li>
@@ -163,11 +163,11 @@ export default function CreatorPage() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-amber-300 mb-3">
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20">
+              <h3 className="text-xl font-semibold text-teal-800 mb-3">
                 4. Filming Tips for Best Results
               </h3>
-              <ul className="list-disc pl-6 space-y-1 text-teal-100/90">
+              <ul className="list-disc pl-6 space-y-1 text-teal-700/90">
                 <li>Lighting: Natural daylight or ring light.</li>
                 <li>Background: Clean and uncluttered.</li>
                 <li>Sound: Clear audio or subtitles.</li>
@@ -175,11 +175,11 @@ export default function CreatorPage() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-amber-300 mb-3">
+            <div className="bg-white rounded-xl p-6 border border-amber-300/20">
+              <h3 className="text-xl font-semibold text-teal-800 mb-3">
                 5. Licensing Notes
               </h3>
-              <ul className="list-disc pl-6 space-y-1 text-teal-100/90">
+              <ul className="list-disc pl-6 space-y-1 text-teal-700/90">
                 <li>Upload only content you created.</li>
                 <li>Brands may license VeeVu™ under agreed terms.</li>
                 <li>You retain ownership unless you transfer it.</li>

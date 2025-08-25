@@ -24,16 +24,16 @@ export default function BrandPage() {
       </div>
 
       <section className="px-6 py-12">
-        <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/20 shadow-lg">
-          <h2 className="text-2xl font-semibold text-amber-300 mb-4">
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+          <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             Why partner with Tai Ora?
           </h2>
-          <p className="text-teal-100/90 leading-relaxed">
+          <p className="text-teal-700/90 leading-relaxed">
             One creator, two assets. With every upload, your brand receives both
-            a <span className="text-amber-300">VeeVu™</span> preview and an{" "}
-            <span className="text-amber-300">iGlo™</span> journey.
+            a <span className="text-amber-600">VeeVu™</span> preview and an{" "}
+            <span className="text-amber-600">iGlo™</span> journey.
           </p>
-          <ul className="mt-4 space-y-2 text-teal-100/90">
+          <ul className="mt-4 space-y-2 text-teal-700/90">
             <li>• VeeVu™ — short, high-impact previews that drive discovery</li>
             <li>
               • iGlo™ — full, AI-verified journeys that prove results and build
@@ -45,11 +45,11 @@ export default function BrandPage() {
       </section>
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 mb-6 text-center">
+        <div className="max-w-4xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
+          <h2 className="text-3xl font-light italic text-teal-800 mb-6 text-center">
             Ethical & inclusive by design
           </h2>
-          <ul className="space-y-3 text-teal-100/90">
+          <ul className="space-y-3 text-teal-700/90">
             <li>• Consent-first licensing with transparent terms</li>
             <li>• Real creators, real results — no gimmicks, no scripts</li>
             <li>
@@ -75,9 +75,9 @@ export default function BrandPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all"
+                className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all"
               >
-                <p className="text-teal-100/90">{item}</p>
+                <p className="text-teal-700/90">{item}</p>
               </div>
             ))}
           </div>
@@ -85,11 +85,11 @@ export default function BrandPage() {
       </section>
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 mb-8 text-center">
+        <div className="max-w-4xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
+          <h2 className="text-3xl font-light italic text-teal-800 mb-8 text-center">
             Licensing options
           </h2>
-          <ul className="space-y-4 text-teal-100/90">
+          <ul className="space-y-4 text-teal-700/90">
             <li>
               • Creator-owned, brand-licensed — flexible durations and
               placements
@@ -97,7 +97,7 @@ export default function BrandPage() {
             <li>• Co-branded — your brand identity alongside the creator</li>
             <li>• Full buyout — optional by mutual agreement</li>
           </ul>
-          <p className="mt-6 text-center italic text-amber-200">
+          <p className="mt-6 text-center italic text-amber-600">
             All options uphold creator rights, cultural respect, and transparent
             usage.
           </p>
