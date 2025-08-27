@@ -37,7 +37,8 @@ export default function ContactPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition"
+                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition text-gray-900 placeholder-gray-400"
+                placeholder="Enter your name"
               />
             </div>
 
@@ -53,7 +54,8 @@ export default function ContactPage() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition"
+                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition text-gray-900 placeholder-gray-400"
+                placeholder="Enter your email"
               />
             </div>
 
@@ -67,7 +69,7 @@ export default function ContactPage() {
               <select
                 id="enquiry-type"
                 name="enquiry-type"
-                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition text-teal-700"
+                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition text-gray-900"
               >
                 <option value="">Please select</option>
                 <option value="general">General Enquiry</option>
@@ -89,12 +91,13 @@ export default function ContactPage() {
                 name="message"
                 rows={5}
                 required
-                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition"
+                className="w-full px-4 py-3 border border-teal-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition text-gray-900 placeholder-gray-400"
+                placeholder="Write your message..."
               ></textarea>
             </div>
 
             <div className="pt-4">
-              <Button className="w-full text-base bg-teal-800 py-4">
+              <Button className="w-full text-base bg-teal-800 text-white py-4">
                 Send Message
               </Button>
             </div>
