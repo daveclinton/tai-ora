@@ -35,7 +35,7 @@ export default function Home() {
             </h2>
 
             <p className="text-white text-base md:text-lg mb-8 leading-relaxed drop-shadow-md">
-              A wellbeing platform built on authenticity, connection, and aroha
+              A wellbeing platform built on authenticity, connection and aroha
               welcoming all cultures with open hearts
             </p>
 

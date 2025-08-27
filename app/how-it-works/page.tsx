@@ -20,7 +20,7 @@ export default function HowItWorks() {
           How Tai Ora Works
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
-          A wellbeing platform built on authenticity, connection, and aroha
+          A wellbeing platform built on authenticity, connection and aroha
           welcoming all cultures with open hearts
         </p>
       </div>
