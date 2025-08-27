@@ -248,7 +248,7 @@ export default function CreatorPage() {
             <li>• Stay protected — your content is yours</li>
             <li>• License verified reviews to brands on your terms</li>
             <li>
-              • Join a community built on ethics, authenticity, and inclusivity
+              • Join a community built on ethics, authenticity and inclusivity
             </li>
           </ul>
           <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
