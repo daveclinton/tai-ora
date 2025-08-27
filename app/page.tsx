@@ -132,7 +132,7 @@ export default function Home() {
           /> */}
           <Avatar className="w-48 h-48 overflow-hidden border-4 border-amber-300/30 shadow-lg">
             <AvatarImage src="/founder.jpg" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>TP</AvatarFallback>
           </Avatar>
           {/* </div> */}
           <div className="flex-1 text-center md:text-left">
