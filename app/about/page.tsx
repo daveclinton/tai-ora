@@ -22,8 +22,6 @@ export default function AboutPage() {
           welcoming all cultures with open hearts
         </p>
       </div>
-
-      {/* Our Story */}
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
@@ -39,8 +37,6 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
-      {/* What Tai Ora Means */}
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
@@ -57,7 +53,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Purpose */}
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
@@ -96,7 +91,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Principles */}
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-teal-300/20">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-light italic text-amber-300 text-center mb-8">
@@ -154,7 +148,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Note from Founder */}
       <section className="px-6 py-16">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-6 text-center">
@@ -184,16 +177,9 @@ export default function AboutPage() {
               reclaim your time, your identity and your wellbeing.
             </p>
           </div>
-
-          <div className="mt-8 text-right">
-            <p className="text-teal-700 font-semibold">With aroha,</p>
-            <p className="text-teal-800">Tania Pickering</p>
-            <p className="text-teal-600">Founder of Tai Ora</p>
-          </div>
         </div>
       </section>
 
-      {/* Call to Action */}
       <section className="px-6 py-12">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-light italic text-amber-300 mb-6">
