@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70">
+    <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70">
       <div className="lg:hidden relative min-h-screen flex flex-col">
         <div className="absolute inset-0 flex">
           <div className="w-1/2 h-full relative overflow-hidden">

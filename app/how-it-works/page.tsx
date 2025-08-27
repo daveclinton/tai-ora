@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HowItWorks() {
   return (
-    <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70">
+    <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70">
       {/* Hero */}
       <div className="relative min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20">
         {/* Glowing Logo Circle */}

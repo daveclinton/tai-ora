@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70 rounded-t-2xl shadow-lg border-t border-amber-300/20 mt-12">
+    <footer className="bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70 rounded-t-2xl shadow-lg border-t border-amber-300/20 mt-12">
       <div className="w-full max-w-screen-xl mx-auto px-6 py-10 md:py-14">
         <div className="sm:flex sm:items-center sm:justify-between">
           {/* Glowing Logo */}

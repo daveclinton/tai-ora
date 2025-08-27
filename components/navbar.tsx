@@ -119,7 +119,7 @@ export default function Navbar() {
 
           {/* Nest Hub Optimized Navigation (1024px) */}
           <div className="hidden lg:flex xl:hidden items-center absolute left-1/2 transform -translate-x-1/2 space-x-6">
-            <div className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
+            <div className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"></div>
             <Link
               href="/"
               className={`transition-colors font-medium tracking-wide text-xs ${
@@ -210,7 +210,7 @@ export default function Navbar() {
 
           {/* Medium Screen Navigation (768px-1023px) */}
           <div className="hidden md:flex lg:hidden items-center absolute left-1/2 transform -translate-x-1/2 space-x-5">
-            <div className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
+            <div className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-cyan/40 to-transparent"></div>
             <Link
               href="/"
               className={`transition-colors font-medium tracking-wide text-xs ${
@@ -335,7 +335,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-gradient-to-b from-teal-900 to-amber-900 z-40 transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 bg-gradient-to-b from-teal-900 to-cyan-800 z-40 transition-opacity duration-300 md:hidden ${
           isMobileMenuOpen
             ? "opacity-95 pointer-events-auto"
             : "opacity-0 pointer-events-none"

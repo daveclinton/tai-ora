@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 
 export default function AboutPage() {
   return (
-    <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-900/70">
+    <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-amber-700/70">
       {/* Hero */}
       <div className="relative min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20">
         {/* Glowing Logo Circle */}
-        <div className="w-36 h-36 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative shadow-lg shadow-amber-400/70 ring-2 ring-amber-300/50 mx-auto mb-6">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
+        <div className="w-36 h-36 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative shadow-lg shadow-amber-400/70 ring-2 ring-teal-300/50 mx-auto mb-6">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-teal-300/30 to-amber-400/30 animate-ping-slow"></div>
           <img
             src="/logo.png"
             alt="Tai Ora logo"
@@ -27,7 +27,7 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="px-6 py-12">
-        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             Our Story
           </h2>
@@ -44,7 +44,7 @@ export default function AboutPage() {
 
       {/* What Tai Ora Means */}
       <section className="px-6 py-12">
-        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             What Tai Ora Means
           </h2>
@@ -82,7 +82,7 @@ export default function AboutPage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all text-center"
+                className="bg-white rounded-xl p-6 border border-teal-200 hover:border-teal-300 transition-all text-center"
               >
                 <h3 className="text-xl font-semibold text-teal-800 mb-2">
                   {item.title}
@@ -99,7 +99,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Principles */}
-      <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
+      <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-teal-300/20">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-light italic text-amber-300 text-center mb-8">
             Our Principles
@@ -138,12 +138,12 @@ export default function AboutPage() {
             ].map((principle, i) => (
               <div
                 key={i}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all"
+                className="bg-white rounded-xl p-6 border border-teal-200 hover:border-teal-300 transition-all"
               >
-                <h3 className="text-xl font-semibold text-amber-300 mb-2">
+                <h3 className="text-xl font-semibold text-teal-800 mb-2">
                   {principle.title}
                 </h3>
-                <p className="text-teal-100/90">{principle.desc}</p>
+                <p className="text-teal-700/90">{principle.desc}</p>
               </div>
             ))}
           </div>
@@ -158,12 +158,12 @@ export default function AboutPage() {
 
       {/* Note from Founder */}
       <section className="px-6 py-16">
-        <div className="max-w-5xl mx-auto bg-amber-50/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/30 shadow-lg">
-          <h2 className="text-2xl font-semibold text-amber-300 mb-6 text-center">
+        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
+          <h2 className="text-2xl font-semibold text-teal-800 mb-6 text-center">
             A Note from Our Founder
           </h2>
 
-          <div className="text-teal-100/90 leading-relaxed space-y-4 italic">
+          <div className="text-teal-700 leading-relaxed space-y-4 italic">
             <p>Kia Ora,</p>
 
             <p>
@@ -188,9 +188,9 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-8 text-right">
-            <p className="text-amber-300 font-semibold">With aroha,</p>
-            <p className="text-teal-100">Tania Pickering</p>
-            <p className="text-teal-100/80">Founder of Tai Ora</p>
+            <p className="text-teal-700 font-semibold">With aroha,</p>
+            <p className="text-teal-800">Tania Pickering</p>
+            <p className="text-teal-600">Founder of Tai Ora</p>
           </div>
         </div>
       </section>
@@ -211,7 +211,7 @@ export default function AboutPage() {
             </GoldenButton>
             <Button
               variant="outline"
-              className="border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent"
+              className="border-2 border-teal-300 text-white hover:bg-teal-300/20 hover:border-teal-400 font-semibold px-10 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent"
             >
               Learn More
             </Button>
