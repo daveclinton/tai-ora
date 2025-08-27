@@ -127,7 +127,7 @@ export default function Home() {
             <img
               src="/founder.jpg"
               alt="Tania Pickering, Founder of Tai Ora"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="flex-1 text-center md:text-left">
