@@ -131,7 +131,7 @@ export default function Home() {
             className="w-full h-full"
           /> */}
           <Avatar className="w-48 h-48 overflow-hidden border-4 border-amber-300/30 shadow-lg">
-            <AvatarImage src="/founder.jpg" />
+            <AvatarImage src="/profile.png" />
             <AvatarFallback>TP</AvatarFallback>
           </Avatar>
           {/* </div> */}
