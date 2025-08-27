@@ -59,7 +59,7 @@ export default function CreatorPage() {
         </div>
       </section>
 
-      <section className="px-6 py-12">
+      {/* <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
             How It Works
@@ -172,7 +172,7 @@ export default function CreatorPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-5xl bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/30 text-center">
