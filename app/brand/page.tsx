@@ -106,12 +106,15 @@ export default function BrandPage() {
 
       <section className="px-6 py-16 text-center">
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-          <GoldenButton href="/contact" className="text-base w-full sm:w-auto">
+          <GoldenButton
+            href="/contact"
+            className="text-base py-3 w-full sm:w-auto"
+          >
             Talk to Us
           </GoldenButton>
           <Button
             variant="outline"
-            className="w-full sm:w-auto border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent"
+            className="w-full sm:w-auto border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-6 text-base tracking-wide rounded-lg transition-colors bg-transparent"
           >
             See How Creators Contribute
           </Button>

@@ -180,12 +180,12 @@ export default function HowItWorks() {
 
         {/* CTA Buttons */}
         <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-          <GoldenButton href="/creators" className="text-lg px-10">
+          <GoldenButton href="/creators" className="text-lg px-10 py-4">
             For Creators
           </GoldenButton>
           <Button
             variant="outline"
-            className="border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-4 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
+            className="border-2  border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-8 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
           >
             For Brands
           </Button>

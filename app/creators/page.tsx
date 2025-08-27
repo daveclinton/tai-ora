@@ -251,13 +251,13 @@ export default function CreatorPage() {
               • Join a community built on ethics, authenticity, and inclusivity
             </li>
           </ul>
-          <div className="flex justify-center gap-6 mt-10">
-            <GoldenButton href="/" className="text-base">
+          <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
+            <GoldenButton href="/" className="text-lg px-10 py-4">
               Apply Now
             </GoldenButton>
             <Button
               variant="outline"
-              className="border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent"
+              className="border-2  border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-8 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
             >
               Learn More
             </Button>

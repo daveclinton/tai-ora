@@ -189,8 +189,8 @@ export default function AboutPage() {
             Become part of a community that values authenticity, wellbeing, and
             cultural connection.
           </p>
-          <div className="flex justify-center gap-6">
-            <GoldenButton href="/creator" className="text-base">
+          <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
+            <GoldenButton href="/creator" className="text-base py-4">
               Join as Creator
             </GoldenButton>
             <Button
