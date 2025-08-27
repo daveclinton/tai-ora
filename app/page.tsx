@@ -1,4 +1,5 @@
 import { GoldenButton } from "@/components/golden-button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -123,13 +124,17 @@ export default function Home() {
 
       <div className="w-full py-16 px-6 bg-teal-800">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-300/30 shadow-lg">
-            <img
-              src="/founder.jpg"
-              alt="Tania Pickering, Founder of Tai Ora"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          {/* <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-300/30 shadow-lg"> */}
+          {/* <img
+            src="/founder.jpg"
+            alt="Tania Pickering, Founder of Tai Ora"
+            className="w-full h-full"
+          /> */}
+          <Avatar className="w-48 h-48 overflow-hidden border-4 border-amber-300/30 shadow-lg">
+            <AvatarImage src="/founder.jpg" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+          {/* </div> */}
           <div className="flex-1 text-center md:text-left">
             <blockquote className="text-white text-xl italic mb-4 leading-relaxed">
               "Tai Ora is designed to help people feel seen, supported and
