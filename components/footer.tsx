@@ -1,4 +1,5 @@
 export function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className="bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70 rounded-t-2xl shadow-lg border-t border-amber-300/20 mt-12">
       <div className="w-full max-w-screen-xl mx-auto px-6 py-10 md:py-14">
@@ -14,7 +15,7 @@ export function Footer() {
           </div>
 
           {/* Navigation */}
-          <ul className="flex flex-wrap items-center gap-6 text-sm font-medium text-teal-100">
+          <ul className="flex flex-wrap items-center gap-6 text-sm font-medium text-white">
             <li>
               <a href="#" className="hover:text-amber-300 transition-colors">
                 Home
@@ -42,8 +43,8 @@ export function Footer() {
         <hr className="my-8 border-amber-300/30" />
 
         {/* Copyright */}
-        <span className="block text-sm text-teal-100/80 sm:text-center">
-          © 2025{" "}
+        <span className="block text-sm text-white sm:text-center">
+          © {year}{" "}
           <a
             href="https://taiora.com/"
             className="hover:text-amber-300 transition-colors"

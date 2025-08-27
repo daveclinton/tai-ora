@@ -4,9 +4,7 @@ import { Button } from "@/components/ui/button";
 export default function AboutPage() {
   return (
     <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-700/70">
-      {/* Hero */}
       <div className="relative min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20">
-        {/* Glowing Logo Circle */}
         <div className="w-36 h-36 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative shadow-lg shadow-amber-400/70 ring-2 ring-teal-300/50 mx-auto mb-6">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-teal-300/30 to-amber-400/30 animate-ping-slow"></div>
           <img
