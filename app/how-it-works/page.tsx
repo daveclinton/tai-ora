@@ -1,7 +1,89 @@
 import { GoldenButton } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
+import {
+  Upload,
+  Video,
+  Eye,
+  Heart,
+  Users,
+  Play,
+  FileText,
+  Zap,
+  Camera,
+  CheckCircle,
+  Handshake,
+  Target,
+  Shield,
+  Globe,
+} from "lucide-react";
 
 export default function HowItWorks() {
+  const creatorSteps = [
+    {
+      icon: Video,
+      title: "Record your journey",
+      description: "Hook → Intro → Benefits → Demo → CTA.",
+    },
+    {
+      icon: Upload,
+      title: "Upload & describe",
+      description: "Title, product, brand, category, key benefits.",
+    },
+    {
+      icon: Zap,
+      title: "Auto VeeVu™",
+      description: "Tai Ora generates the preview cut from your journey.",
+    },
+    {
+      icon: Camera,
+      title: "iGlo™ builds over time",
+      description: "Add photos, notes, and reflections as you go.",
+    },
+    {
+      icon: CheckCircle,
+      title: "Publish & license",
+      description: "Approve where your content appears and how it's used.",
+    },
+  ];
+
+  const brandBenefits = [
+    {
+      icon: Heart,
+      title: "Authentic social-proof",
+      description: "that's consented and creator-owned.",
+    },
+    {
+      icon: Play,
+      title: "Performance-ready previews",
+      description: "(VeeVu™) for ads, PDPs, and retail.",
+    },
+    {
+      icon: Target,
+      title: "Embedded journeys",
+      description: "(iGlo™) that increase shopper confidence.",
+    },
+  ];
+
+  const ethicsValues = [
+    {
+      icon: Globe,
+      title: "Cultural inclusivity",
+      description:
+        "Māori-led foundation; we welcome all peoples and cultures with open hearts.",
+    },
+    {
+      icon: Shield,
+      title: "Creator respect",
+      description:
+        "Respect for creator IP, informed consent, and transparent licensing.",
+    },
+    {
+      icon: Heart,
+      title: "Wellbeing-first",
+      description: "No pressure to exaggerate claims or results.",
+    },
+  ];
+
   return (
     <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70">
       {/* Hero */}
@@ -73,9 +155,15 @@ export default function HowItWorks() {
       <div className="max-w-5xl mx-auto my-16 px-6 space-y-10">
         {/* One Upload Section */}
         <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
-          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
-            One upload. Two outcomes.
-          </h2>
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 flex items-center justify-center">
+              <Upload className="w-8 h-8 text-amber-600" />
+            </div>
+            <h2 className="text-teal-800 font-semibold text-2xl italic">
+              One upload. Two outcomes.
+            </h2>
+          </div>
+
           <p className="mb-6 text-teal-700">
             <span className="inline-block bg-amber-100 border border-amber-300 text-amber-700 px-3 py-1 rounded-full font-bold text-sm">
               Creators upload once
@@ -83,26 +171,39 @@ export default function HowItWorks() {
             — sharing benefits, usage and authentic experience. Tai Ora then{" "}
             <strong>automatically creates two outputs</strong>:
           </p>
-          <div className="grid md:grid-cols-2 gap-5 mb-4">
-            <div>
-              <h3 className="text-teal-800 text-lg font-semibold mb-2">
-                VeeVu™
-              </h3>
-              <p className="text-teal-700">
-                Short, meaningful preview cut from the journey — perfect for
-                product pages, ads, and quick decisions.
-              </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-4">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                <Eye className="w-6 h-6 text-amber-600" />
+              </div>
+              <div>
+                <h3 className="text-teal-800 text-lg font-semibold mb-2">
+                  VeeVu™
+                </h3>
+                <p className="text-teal-700">
+                  Short, meaningful preview cut from the journey — perfect for
+                  product pages, ads, and quick decisions.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 className="text-teal-800 text-lg font-semibold mb-2">
-                iGlo™
-              </h3>
-              <p className="text-teal-700">
-                The full, AI-verified journey with photos, notes, reflections,
-                and truthful results over time.
-              </p>
+
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                <Heart className="w-6 h-6 text-amber-600" />
+              </div>
+              <div>
+                <h3 className="text-teal-800 text-lg font-semibold mb-2">
+                  iGlo™
+                </h3>
+                <p className="text-teal-700">
+                  The full, AI-verified journey with photos, notes, reflections,
+                  and truthful results over time.
+                </p>
+              </div>
             </div>
           </div>
+
           <p className="italic mt-3 text-amber-600">
             Result: one video powers both discovery <strong>and</strong> trust.
           </p>
@@ -110,72 +211,98 @@ export default function HowItWorks() {
 
         {/* Steps for Creators */}
         <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
-          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
-            Steps for Creators
-          </h2>
-          <ol className="list-decimal list-inside space-y-2 text-teal-700">
-            <li>
-              <strong>Record your journey</strong> — Hook → Intro → Benefits →
-              Demo → CTA.
-            </li>
-            <li>
-              <strong>Upload & describe</strong> — Title, product, brand,
-              category, key benefits.
-            </li>
-            <li>
-              <strong>Auto VeeVu™</strong> — Tai Ora generates the preview cut
-              from your journey.
-            </li>
-            <li>
-              <strong>iGlo™ builds over time</strong> — Add photos, notes, and
-              reflections as you go.
-            </li>
-            <li>
-              <strong>Publish & license</strong> — Approve where your content
-              appears and how it's used.
-            </li>
-          </ol>
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 flex items-center justify-center">
+              <Users className="w-8 h-8 text-amber-600" />
+            </div>
+            <h2 className="text-teal-800 font-semibold text-2xl italic">
+              Steps for Creators
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {creatorSteps.map((step, index) => (
+              <div
+                key={index}
+                className="flex items-start gap-4 p-4 rounded-lg hover:bg-teal-50/50 transition-colors"
+              >
+                <div className="flex items-center justify-center w-8 h-8 bg-amber-100 rounded-full text-amber-700 font-bold text-sm flex-shrink-0">
+                  {index + 1}
+                </div>
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <step.icon className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-teal-800 mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-teal-700">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* What Brands Receive */}
         <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
-          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
-            What Brands Receive
-          </h2>
-          <ul className="list-disc list-inside space-y-2 text-teal-700">
-            <li>
-              <strong>Authentic social-proof</strong> that's consented and
-              creator-owned.
-            </li>
-            <li>
-              <strong>Performance-ready previews</strong> (VeeVu™) for ads,
-              PDPs, and retail.
-            </li>
-            <li>
-              <strong>Embedded journeys</strong> (iGlo™) that increase shopper
-              confidence.
-            </li>
-          </ul>
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 flex items-center justify-center">
+              <Handshake className="w-8 h-8 text-amber-600" />
+            </div>
+            <h2 className="text-teal-800 font-semibold text-2xl italic">
+              What Brands Receive
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {brandBenefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="flex items-start gap-4 p-4 rounded-lg hover:bg-teal-50/50 transition-colors"
+              >
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <benefit.icon className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <span className="font-semibold text-teal-800">
+                    {benefit.title}
+                  </span>
+                  <span className="text-teal-700"> {benefit.description}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Ethics Section */}
         <div className="bg-white rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
-          <h2 className="text-teal-800 font-semibold text-2xl italic mb-4">
-            Ethics, Culture, and Care
-          </h2>
-          <ul className="list-disc list-inside space-y-2 text-teal-700">
-            <li>
-              Māori-led foundation; we welcome all peoples and cultures with
-              open hearts.
-            </li>
-            <li>
-              Respect for creator IP, informed consent, and transparent
-              licensing.
-            </li>
-            <li>
-              Wellbeing-first — no pressure to exaggerate claims or results.
-            </li>
-          </ul>
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 flex items-center justify-center">
+              <Shield className="w-8 h-8 text-amber-600" />
+            </div>
+            <h2 className="text-teal-800 font-semibold text-2xl italic">
+              Ethics, Culture, and Care
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {ethicsValues.map((value, index) => (
+              <div
+                key={index}
+                className="flex items-start gap-4 p-4 rounded-lg hover:bg-teal-50/50 transition-colors"
+              >
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <value.icon className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-teal-800 mb-1">
+                    {value.title}
+                  </h3>
+                  <p className="text-teal-700">{value.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA Buttons */}
