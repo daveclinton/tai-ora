@@ -1,5 +1,19 @@
 import { GoldenButton } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
+import {
+  Heart,
+  Users,
+  Globe,
+  Sparkles,
+  Target,
+  Eye,
+  Shield,
+  HandHeart,
+  Trees,
+  Star,
+  CircleDashed,
+  Mail,
+} from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -22,11 +36,13 @@ export default function AboutPage() {
           welcoming all cultures with open hearts
         </p>
       </div>
+
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
-          <h2 className="text-2xl font-semibold text-teal-800 mb-4">
-            Our Story
-          </h2>
+          <div className="flex items-center mb-4">
+            <CircleDashed className="text-amber-600 mr-2" size={24} />
+            <h2 className="text-2xl font-semibold text-teal-800">Our Story</h2>
+          </div>
           <p className="text-teal-700/90 leading-relaxed">
             Kia ora, I'm Tania Pickering, and Tai Ora is the vision that has
             called me home. I was born in Aotearoa New Zealand, where from a
@@ -37,11 +53,15 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
-          <h2 className="text-2xl font-semibold text-teal-800 mb-4">
-            What Tai Ora Means
-          </h2>
+          <div className="flex items-center mb-4">
+            <Globe className="text-amber-600 mr-2" size={24} />
+            <h2 className="text-2xl font-semibold text-teal-800">
+              What Tai Ora Means
+            </h2>
+          </div>
           <p className="text-teal-700/90 leading-relaxed">
             Tai Ora carries deep meaning. Tai speaks to the tides and flow of
             life; Ora means wellbeing, life and healing. Together, Tai Ora is a
@@ -55,28 +75,41 @@ export default function AboutPage() {
 
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
-            Our Purpose
-          </h2>
+          <div className="flex justify-center items-center mb-10">
+            <Target className="text-amber-300 mr-2" size={28} />
+            <h2 className="text-3xl font-light italic text-amber-300">
+              Our Purpose
+            </h2>
+          </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
                 title: "Empower",
                 desc: "Empower people to make better, more authentic choices",
+                icon: (
+                  <Sparkles className="text-amber-600 mb-4 mx-auto" size={32} />
+                ),
               },
               {
                 title: "Showcase",
                 desc: "Showcase products and practices that support true wellbeing",
+                icon: (
+                  <Star className="text-amber-600 mb-4 mx-auto" size={32} />
+                ),
               },
               {
                 title: "Build",
                 desc: "Build a platform that extends into real-world sustainable communities",
+                icon: (
+                  <Trees className="text-amber-600 mb-4 mx-auto" size={32} />
+                ),
               },
             ].map((item, i) => (
               <div
                 key={i}
                 className="bg-white rounded-xl p-6 border border-teal-200 hover:border-teal-300 transition-all text-center"
               >
+                {item.icon}
                 <h3 className="text-xl font-semibold text-teal-800 mb-2">
                   {item.title}
                 </h3>
@@ -84,18 +117,24 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-          <p className="text-center mt-10 text-lg text-amber-200">
-            At the heart of Tai Ora is a simple truth: I see you. We exist to
-            ensure people feel seen, supported and inspired.
-          </p>
+          <div className="flex justify-center items-center mt-10">
+            <Eye className="text-amber-200 mr-2" size={24} />
+            <p className="text-lg text-amber-200">
+              At the heart of Tai Ora is a simple truth: I see you. We exist to
+              ensure people feel seen, supported and inspired.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-teal-300/20">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 text-center mb-8">
-            Our Principles
-          </h2>
+          <div className="flex justify-center items-center mb-8">
+            <Heart className="text-amber-300 mr-2" size={28} />
+            <h2 className="text-3xl font-light italic text-amber-300">
+              Our Principles
+            </h2>
+          </div>
           <p className="text-center text-teal-100/90 mb-10">
             Guided by values drawn from te ao Māori, principles deeply rooted in
             culture yet universally relevant:
@@ -106,35 +145,44 @@ export default function AboutPage() {
               {
                 title: "Whakapapa",
                 desc: "Honouring our roots and connections, knowing we are part of a greater lineage.",
+                icon: <Trees className="text-amber-600 mb-2" size={24} />,
               },
               {
                 title: "Manaakitanga",
                 desc: "Caring for others with respect, generosity and aroha.",
+                icon: <HandHeart className="text-amber-600 mb-2" size={24} />,
               },
               {
                 title: "Kaitiakitanga",
                 desc: "Protecting the land, people and knowledge for future generations.",
+                icon: <Shield className="text-amber-600 mb-2" size={24} />,
               },
               {
                 title: "Pono",
                 desc: "Acting with honesty, transparency and integrity.",
+                icon: <Sparkles className="text-amber-600 mb-2" size={24} />,
               },
               {
                 title: "Kotahitanga",
                 desc: "Uniting communities across cultures with shared purpose.",
+                icon: <Users className="text-amber-600 mb-2" size={24} />,
               },
               {
                 title: "Ora",
                 desc: "Placing wellbeing at the heart of everything we do.",
+                icon: <Heart className="text-amber-600 mb-2" size={24} />,
               },
             ].map((principle, i) => (
               <div
                 key={i}
                 className="bg-white rounded-xl p-6 border border-teal-200 hover:border-teal-300 transition-all"
               >
-                <h3 className="text-xl font-semibold text-teal-800 mb-2">
-                  {principle.title}
-                </h3>
+                <div className="flex items-center mb-3">
+                  {principle.icon}
+                  <h3 className="text-xl font-semibold text-teal-800 ml-2">
+                    {principle.title}
+                  </h3>
+                </div>
                 <p className="text-teal-700/90">{principle.desc}</p>
               </div>
             ))}
@@ -150,9 +198,12 @@ export default function AboutPage() {
 
       <section className="px-6 py-16">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg">
-          <h2 className="text-2xl font-semibold text-teal-800 mb-6 text-center">
-            A Note from Our Founder
-          </h2>
+          <div className="flex justify-center items-center mb-6">
+            <Mail className="text-amber-600 mr-2" size={28} />
+            <h2 className="text-2xl font-semibold text-teal-800">
+              A Note from Our Founder
+            </h2>
+          </div>
 
           <div className="text-teal-700 leading-relaxed space-y-4 italic">
             <p>Kia Ora,</p>
@@ -182,9 +233,12 @@ export default function AboutPage() {
 
       <section className="px-6 py-12">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-light italic text-amber-300 mb-6">
-            Join Our Journey
-          </h2>
+          <div className="flex justify-center items-center mb-6">
+            <Users className="text-amber-300 mr-2" size={28} />
+            <h2 className="text-2xl font-light italic text-amber-300">
+              Join Our Journey
+            </h2>
+          </div>
           <p className="text-teal-100/90 mb-8">
             Become part of a community that values authenticity, wellbeing, and
             cultural connection.
