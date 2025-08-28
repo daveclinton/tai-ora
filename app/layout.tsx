@@ -20,10 +20,56 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Tai Ora - Truth in Beauty, Wellness with Purpose",
+  title: {
+    template: "%s | Tai Ora - Wellbeing Through Authenticity & Connection",
+    default:
+      "Tai Ora - A Wellbeing Platform for Authenticity, Connection & Aroha",
+  },
   description:
-    "A Māori-led platform uniting authenticity, wellbeing and ethical beauty — welcoming all cultures with open hearts.",
-  generator: "v0.app",
+    "Tai Ora is a wellbeing platform built on authenticity, connection, and aroha. Rooted in Māori values, we welcome all cultures to reclaim time, identity, and wellbeing.",
+  keywords: [
+    "Tai Ora",
+    "wellbeing platform",
+    "authenticity and connection",
+    "aroha",
+    "cultural wellness",
+    "Māori values",
+    "community wellbeing",
+    "sustainable wellbeing",
+  ],
+  authors: [{ name: "Tai Ora", url: "https://www.taiora.ai" }],
+  generator: "Next.js",
+  applicationName: "Tai Ora",
+  referrer: "origin-when-cross-origin",
+  alternates: {
+    canonical: "https://www.taiora.ai",
+  },
+  openGraph: {
+    title: "Tai Ora - Wellbeing Through Authenticity & Connection",
+    description:
+      "Join Tai Ora, a wellbeing platform grounded in cultural values, authenticity, and aroha. Reclaim your time, identity, and wellbeing through community and connection.",
+    url: "https://www.taiora.ai",
+    siteName: "Tai Ora",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://www.taiora.ai/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tai Ora - Wellbeing Through Authenticity & Connection",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tai Ora - Wellbeing Through Authenticity & Connection",
+    description:
+      "Tai Ora is a cultural wellbeing platform rooted in authenticity, aroha, and community connection. Welcoming all cultures to live authentically.",
+    site: "@taiora",
+    creator: "@taiora",
+    images: ["https://www.taiora.ai/og-image.png"],
+  },
 };
 
 export default function RootLayout({
