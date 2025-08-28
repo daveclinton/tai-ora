@@ -1,12 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { GoldenButton } from "@/components/golden-button";
 import Link from "next/link";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
   const pathname = usePathname();
+  const moreMenuRef = useRef<HTMLDivElement>(null);
 
   type ValidPath =
     | "/"
@@ -33,9 +35,30 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const toggleMoreMenu = () => {
+    setIsMoreMenuOpen(!isMoreMenuOpen);
+  };
+
   const handleNavItemClick = () => {
     setIsMobileMenuOpen(false);
+    setIsMoreMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        moreMenuRef.current &&
+        !moreMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsMoreMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -166,11 +189,20 @@ export default function Navbar() {
             >
               BRAND
             </Link>
-            <div className="relative group">
-              <button className="text-white hover:text-amber-200 text-xs font-medium tracking-wide flex items-center">
+            <div className="relative" ref={moreMenuRef}>
+              <button
+                onClick={toggleMoreMenu}
+                className={`transition-colors font-medium tracking-wide text-xs flex items-center ${
+                  isMoreMenuOpen
+                    ? "text-amber-300"
+                    : "text-white hover:text-amber-200"
+                }`}
+              >
                 MORE
                 <svg
-                  className="w-3 h-3 ml-1"
+                  className={`w-3 h-3 ml-1 transition-transform duration-200 ${
+                    isMoreMenuOpen ? "rotate-180" : ""
+                  }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -183,10 +215,16 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-              <div className="absolute hidden group-hover:block right-0 mt-2 w-40 bg-teal-800/95 backdrop-blur-sm rounded-md shadow-lg overflow-hidden border border-amber-300/20">
+              <div
+                className={`absolute right-0 mt-2 w-40 bg-teal-800/95 backdrop-blur-sm rounded-md shadow-lg overflow-hidden border border-amber-300/20 transition-all duration-200 ${
+                  isMoreMenuOpen
+                    ? "opacity-100 visible transform translate-y-0"
+                    : "opacity-0 invisible transform -translate-y-2"
+                }`}
+              >
                 <Link
                   href="/about"
-                  className={`block px-4 py-3 text-xs ${
+                  className={`block px-4 py-3 text-xs transition-colors ${
                     activePage === "ABOUT US"
                       ? "text-amber-300 bg-teal-900/50 font-semibold"
                       : "text-white hover:text-amber-200 hover:bg-teal-700/50"
@@ -197,7 +235,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   href="/partner"
-                  className={`block px-4 py-3 text-xs ${
+                  className={`block px-4 py-3 text-xs transition-colors ${
                     activePage === "PARTNER WITH US"
                       ? "text-amber-300 bg-teal-900/50 font-semibold"
                       : "text-white hover:text-amber-200 hover:bg-teal-700/50"
@@ -246,11 +284,20 @@ export default function Navbar() {
             >
               CREATORS
             </Link>
-            <div className="relative group">
-              <button className="text-white hover:text-amber-200 text-xs font-medium tracking-wide flex items-center">
+            <div className="relative" ref={moreMenuRef}>
+              <button
+                onClick={toggleMoreMenu}
+                className={`transition-colors font-medium tracking-wide text-xs flex items-center ${
+                  isMoreMenuOpen
+                    ? "text-amber-300"
+                    : "text-white hover:text-amber-200"
+                }`}
+              >
                 MORE
                 <svg
-                  className="w-3 h-3 ml-1"
+                  className={`w-3 h-3 ml-1 transition-transform duration-200 ${
+                    isMoreMenuOpen ? "rotate-180" : ""
+                  }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -263,10 +310,16 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-              <div className="absolute hidden group-hover:block right-0 mt-2 w-40 bg-teal-800/95 backdrop-blur-sm rounded-md shadow-lg overflow-hidden border border-amber-300/20">
+              <div
+                className={`absolute right-0 mt-2 w-40 bg-teal-800/95 backdrop-blur-sm rounded-md shadow-lg overflow-hidden border border-amber-300/20 transition-all duration-200 ${
+                  isMoreMenuOpen
+                    ? "opacity-100 visible transform translate-y-0"
+                    : "opacity-0 invisible transform -translate-y-2"
+                }`}
+              >
                 <Link
                   href="/brand"
-                  className={`block px-4 py-3 text-xs ${
+                  className={`block px-4 py-3 text-xs transition-colors ${
                     activePage === "BRAND"
                       ? "text-amber-300 bg-teal-900/50 font-semibold"
                       : "text-white hover:text-amber-200 hover:bg-teal-700/50"
@@ -277,7 +330,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   href="/about"
-                  className={`block px-4 py-3 text-xs ${
+                  className={`block px-4 py-3 text-xs transition-colors ${
                     activePage === "ABOUT US"
                       ? "text-amber-300 bg-teal-900/50 font-semibold"
                       : "text-white hover:text-amber-200 hover:bg-teal-700/50"
@@ -288,7 +341,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   href="/partner"
-                  className={`block px-4 py-3 text-xs ${
+                  className={`block px-4 py-3 text-xs transition-colors ${
                     activePage === "PARTNER WITH US"
                       ? "text-amber-300 bg-teal-900/50 font-semibold"
                       : "text-white hover:text-amber-200 hover:bg-teal-700/50"
