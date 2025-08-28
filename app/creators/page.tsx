@@ -36,24 +36,28 @@ export default function CreatorPage() {
               {
                 title: "Earn fairly",
                 desc: "Get compensated for your authentic content and reviews",
-                // src="/earn.svg"
+                src: "/earn.svg",
               },
               {
                 title: "Exclusive exposure",
                 desc: "Gain visibility with brands seeking genuine recommendations",
-                // src="/team-spirit.svg"
+                src: "/visibility.svg",
               },
               {
                 title: "Supportive community",
                 desc: "Join a network of like-minded creators focused on wellbeing",
-                // src="/visibility.svg"
+                src: "/team-spirit.svg",
               },
             ].map((benefit, i) => (
               <div key={i} className="text-center p-4">
-                <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-amber-600 text-xl font-bold">
-                    {i + 1}
-                  </span>
+                <div className="w-48 h-48 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4 overflow-hidden">
+                  <Image
+                    src={benefit.src}
+                    alt={benefit.title}
+                    width={100}
+                    height={100}
+                    className="h-32 w-32 object-contain"
+                  />
                 </div>
                 <h3 className="font-semibold text-teal-800 mb-2">
                   {benefit.title}
@@ -78,21 +82,44 @@ export default function CreatorPage() {
                 step: "1",
                 title: "Sign Up",
                 desc: "Join our creator community",
+                icon: "/signup-icon.svg",
               },
               {
                 step: "2",
                 title: "Create",
                 desc: "Share authentic experiences",
+                icon: "/create-icon.svg",
               },
-              { step: "3", title: "Share", desc: "Publish your reviews" },
-              { step: "4", title: "Earn", desc: "Monetize your content" },
+              {
+                step: "3",
+                title: "Share",
+                desc: "Publish your reviews",
+                icon: "/share-icon.svg",
+              },
+              {
+                step: "4",
+                title: "Earn",
+                desc: "Monetize your content",
+                icon: "/earn-icon.svg",
+              },
             ].map((item, i) => (
               <div
                 key={i}
                 className="relative z-10 flex flex-col items-center mb-4"
               >
-                <div className="w-16 h-16 rounded-full bg-amber-400 flex items-center justify-center text-white text-xl font-bold mb-4 shadow-lg">
-                  {item.step}
+                <div className="w-32 h-32 rounded-full bg-amber-400 flex items-center justify-center shadow-lg relative overflow-hidden">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={80}
+                    height={80}
+                    className="w-20 h-20 object-contain z-10"
+                  />
+                  <div className="absolute  right-1 w-6 h-6 rounded-full bg-white flex items-center justify-center">
+                    <span className="text-amber-600 text-sm font-bold">
+                      {item.step}
+                    </span>
+                  </div>
                 </div>
                 <h3 className="text-lg font-semibold text-amber-300 mt-4 mb-1">
                   {item.title}
@@ -132,53 +159,8 @@ export default function CreatorPage() {
               </div>
             ))}
           </div>
-          {/* <p className="text-center mt-10 text-lg italic text-amber-200">
-            One video. Two outcomes. Double the impact.
-          </p> */}
         </div>
       </section>
-
-      {/* <section className="px-6 py-12 bg-white/5 backdrop-blur-sm">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
-            Featured Creators
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-              <div
-                key={item}
-                className="bg-white/10 rounded-xl p-4 aspect-square flex flex-col items-center justify-center text-center border border-amber-300/20 hover:border-amber-300/40 transition-all cursor-pointer"
-              >
-                <div className="w-16 h-16 rounded-full bg-teal-300/30 mb-3 flex items-center justify-center">
-                  <span className="text-amber-300 text-xl">👤</span>
-                </div>
-                <h3 className="text-amber-300 font-semibold">Creator {item}</h3>
-                <p className="text-teal-100 text-sm mt-1">Wellness Advocate</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-teal-800/50 rounded-2xl p-6 border border-teal-600/30">
-            <h3 className="text-xl font-semibold text-amber-300 mb-4 text-center">
-              See Tai Ora in Action
-            </h3>
-            <div className="aspect-video bg-black/30 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-amber-400/20 flex items-center justify-center mx-auto mb-3">
-                  <span className="text-amber-300 text-2xl">▶</span>
-                </div>
-                <p className="text-teal-100">
-                  Video preview of the app experience
-                </p>
-                <Button className="mt-4 bg-amber-400 text-teal-900 hover:bg-amber-300">
-                  Watch Demo
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-5xl bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/30 text-center">
@@ -190,7 +172,7 @@ export default function CreatorPage() {
             passion into purpose.
           </p>
 
-          <div className="mx-auto max-w-[70%] bg-white rounded-lg p-6 mb-6">
+          <div className="mx-auto lg:max-w-[70%] bg-white rounded-lg p-6 mb-6">
             <form className="space-y-4">
               <div>
                 <label className="block text-teal-800 text-sm font-medium mb-1">
