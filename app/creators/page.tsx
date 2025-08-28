@@ -59,7 +59,7 @@ export default function CreatorPage() {
         </div>
       </section>
 
-      {/* <section className="px-6 py-12">
+      <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
             How It Works
@@ -126,13 +126,13 @@ export default function CreatorPage() {
               </div>
             ))}
           </div>
-          <p className="text-center mt-10 text-lg italic text-amber-200">
+          {/* <p className="text-center mt-10 text-lg italic text-amber-200">
             One video. Two outcomes. Double the impact.
-          </p>
+          </p> */}
         </div>
       </section>
 
-      <section className="px-6 py-12 bg-white/5 backdrop-blur-sm">
+      {/* <section className="px-6 py-12 bg-white/5 backdrop-blur-sm">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
             Featured Creators
@@ -184,7 +184,7 @@ export default function CreatorPage() {
             passion into purpose.
           </p>
 
-          <div className="mx-auto max-w-md bg-white rounded-lg p-6 mb-6">
+          <div className="mx-auto max-w-[70%] bg-white rounded-lg p-6 mb-6">
             <form className="space-y-4">
               <div>
                 <label className="block text-teal-800 text-sm font-medium mb-1">
@@ -192,7 +192,7 @@ export default function CreatorPage() {
                 </label>
                 <input
                   type="text"
-                  className="w-full p-2 border border-teal-300 rounded"
+                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400"
                 />
               </div>
               <div>
@@ -201,7 +201,7 @@ export default function CreatorPage() {
                 </label>
                 <input
                   type="email"
-                  className="w-full p-2 border border-teal-300 rounded"
+                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400"
                 />
               </div>
               <div>
@@ -210,17 +210,20 @@ export default function CreatorPage() {
                 </label>
                 <input
                   type="text"
-                  className="w-full p-2 border border-teal-300 rounded"
-                  placeholder="@username"
+                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400"
+                  placeholder="url"
                 />
               </div>
               <div>
                 <label className="block text-teal-800 text-sm font-medium mb-1">
                   Why you want to join
                 </label>
-                <textarea className="w-full p-2 border border-teal-300 rounded h-24"></textarea>
+                <textarea
+                  className="w-full p-2 border border-teal-300 rounded h-24 text-teal-900 placeholder-teal-400"
+                  placeholder="Tell us why..."
+                ></textarea>
               </div>
-              <Button className="w-full bg-amber-400 text-teal-900 hover:bg-amber-300 font-semibold py-3">
+              <Button className="w-full bg-amber-400 text-white hover:bg-amber-300 font-semibold py-3">
                 Submit Application
               </Button>
             </form>
@@ -252,7 +255,10 @@ export default function CreatorPage() {
             </li>
           </ul>
           <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-            <GoldenButton href="/" className="text-base py-4 lg:py-0">
+            <GoldenButton
+              href="/"
+              className="text-base text-white py-4 lg:py-0"
+            >
               Apply Now
             </GoldenButton>
             <Button

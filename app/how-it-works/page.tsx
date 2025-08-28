@@ -180,7 +180,10 @@ export default function HowItWorks() {
 
         {/* CTA Buttons */}
         <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-          <GoldenButton href="/creators" className="text-base py-4 lg:py-0">
+          <GoldenButton
+            href="/creators"
+            className="text-base text-white py-4 lg:py-0"
+          >
             For Creators
           </GoldenButton>
           <Button

@@ -108,7 +108,7 @@ export default function BrandPage() {
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <GoldenButton
             href="/contact"
-            className="text-base py-3 w-full sm:w-auto"
+            className="text-base py-3 w-full text-white sm:w-auto"
           >
             Talk to Us
           </GoldenButton>

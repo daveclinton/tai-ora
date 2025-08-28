@@ -117,7 +117,7 @@ export default function ContactPage() {
                 href="mailto:hello@tai-ora.com"
                 className="text-white hover:text-amber-300 transition text-lg"
               >
-                hello@tai-ora.com
+                hello@taiora.ai
               </a>
               <p className="text-teal-100 mt-6 mb-2 text-sm italic">
                 For press & partnerships, email directly:
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 href="mailto:partnerships@tai-ora.com"
                 className="text-white hover:text-amber-300 transition"
               >
-                partnerships@tai-ora.com
+                partnerships@taiora.ai
               </a>
             </div>
 
