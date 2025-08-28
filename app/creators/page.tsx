@@ -199,7 +199,7 @@ export default function CreatorPage() {
                 <input
                   type="text"
                   className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400"
-                  placeholder="url"
+                  placeholder="Link"
                 />
               </div>
               <div>
@@ -211,7 +211,7 @@ export default function CreatorPage() {
                   placeholder="Tell us why..."
                 ></textarea>
               </div>
-              <Button className="w-full bg-amber-400 text-white hover:bg-amber-300 font-semibold py-3">
+              <Button className="bg-amber-400 w-full lg:w-1/2  text-white hover:bg-amber-300 font-semibold py-3">
                 Submit Application
               </Button>
             </form>
