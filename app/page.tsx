@@ -166,7 +166,7 @@ export default function Home() {
               </h3>
               <p className="text-teal-800 leading-relaxed">
                 Instantly transforms long product videos into short, powerful
-                previews that highlight what truly matters. No gimmicks — just
+                previews that highlight what truly matters. No gimmicks, just
                 clear, authentic insights designed to save time and boost
                 discovery.
               </p>
@@ -179,7 +179,7 @@ export default function Home() {
               <p className="text-teal-800 leading-relaxed">
                 Lets you document your full product journey with photos, notes,
                 and reflections. Over time, it creates an AI-verified record of
-                real results — building trust, empowering your voice, and
+                real results, building trust, empowering your voice, and
                 offering brands authentic proof.
               </p>
             </div>
@@ -210,7 +210,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-light text-white mb-6 italic">
             Guided by values, grounded in culture and wellbeing.
           </h2>
-          <p className="text-xl text-teal-100">Created for Everyone.</p>
+          <p className="text-3xl text-bold text-teal-100">
+            Created for Everyone.
+          </p>
         </div>
       </div>
 
@@ -219,7 +221,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
             Join Our Waitlist
           </h2>
-          <p className="text-teal-100 mb-8 text-lg">
+          <p className="text-teal-100 mb-8 text-xl">
             Be the first to experience our new wellbeing tools and features
           </p>
 

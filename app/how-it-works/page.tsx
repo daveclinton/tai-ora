@@ -37,7 +37,7 @@ export default function HowItWorks() {
     {
       icon: Camera,
       title: "iGlo™ builds over time",
-      description: "Add photos, notes, and reflections as you go.",
+      description: "Add photos, notes and reflections as you go.",
     },
     {
       icon: CheckCircle,
@@ -55,7 +55,7 @@ export default function HowItWorks() {
     {
       icon: Play,
       title: "Performance-ready previews",
-      description: "(VeeVu™) for ads, PDPs, and retail.",
+      description: "(VeeVu™) for ads, PDPs and retail.",
     },
     {
       icon: Target,
@@ -75,7 +75,7 @@ export default function HowItWorks() {
       icon: Shield,
       title: "Creator respect",
       description:
-        "Respect for creator IP, informed consent, and transparent licensing.",
+        "Respect for creator IP, informed consent and transparent licensing.",
     },
     {
       icon: Heart,
@@ -160,16 +160,14 @@ export default function HowItWorks() {
               <Upload className="w-8 h-8 text-amber-600" />
             </div>
             <h2 className="text-teal-800 font-semibold text-2xl italic">
-              One upload. Two outcomes.
+              Different uploads. Different outcomes.
             </h2>
           </div>
 
           <p className="mb-6 text-teal-700">
-            <span className="inline-block bg-amber-100 border border-amber-300 text-amber-700 px-3 py-1 rounded-full font-bold text-sm">
-              Creators upload once
-            </span>{" "}
-            — sharing benefits, usage and authentic experience. Tai Ora then{" "}
-            <strong>automatically creates two outputs</strong>:
+            Creators can upload a VeeVu™️ for quick discovery or an iGlo™️ for
+            authentic proof. Many choose to share both, giving your brand
+            flexible, trustworthy content.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-4">
@@ -182,8 +180,8 @@ export default function HowItWorks() {
                   VeeVu™
                 </h3>
                 <p className="text-teal-700">
-                  Short, meaningful preview cut from the journey — perfect for
-                  product pages, ads, and quick decisions.
+                  Short, meaningful preview cut from the journey, perfect for
+                  product pages, ads and quick decisions.
                 </p>
               </div>
             </div>
@@ -197,7 +195,7 @@ export default function HowItWorks() {
                   iGlo™
                 </h3>
                 <p className="text-teal-700">
-                  The full, AI-verified journey with photos, notes, reflections,
+                  The full, AI-verified journey with photos, notes, reflections
                   and truthful results over time.
                 </p>
               </div>
@@ -205,7 +203,7 @@ export default function HowItWorks() {
           </div>
 
           <p className="italic mt-3 text-amber-600">
-            Result: one video powers both discovery <strong>and</strong> trust.
+            Result: two video powers both discovery <strong>and</strong> trust.
           </p>
         </div>
 

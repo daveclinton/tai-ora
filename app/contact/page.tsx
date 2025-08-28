@@ -17,8 +17,8 @@ export default function ContactPage() {
           Let's connect
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed mb-10">
-          We'd love to hear from you — whether you're curious about Tai Ora,
-          want to collaborate, or just want to say kia ora.
+          We'd love to hear from you ,whether you're curious about Tai Ora, want
+          to collaborate, or just want to say kia ora.
         </p>
       </div>
 

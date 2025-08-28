@@ -60,10 +60,10 @@ export default function CreatorPage() {
                     className="h-32 w-32 object-contain"
                   />
                 </div>
-                <h3 className="font-semibold text-teal-800 mb-2">
+                <h3 className="font-semibold text-xl text-teal-800 mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-teal-700/90 text-sm">{benefit.desc}</p>
+                <p className="text-teal-700/90 text-lg">{benefit.desc}</p>
               </div>
             ))}
           </div>
@@ -100,7 +100,7 @@ export default function CreatorPage() {
               {
                 step: "4",
                 title: "Earn",
-                desc: "Monetize your content",
+                desc: "Monetise your content",
                 icon: "/earn-icon.svg",
               },
             ].map((item, i) => (
@@ -125,7 +125,7 @@ export default function CreatorPage() {
                 <h3 className="text-lg font-semibold text-amber-300 mt-4 mb-1">
                   {item.title}
                 </h3>
-                <p className="text-teal-100 text-sm">{item.desc}</p>
+                <p className="text-teal-100 text-lg">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -135,7 +135,7 @@ export default function CreatorPage() {
                 <Upload className="w-8 h-8 text-amber-600" />
               </div>
               <h2 className="text-teal-800 font-semibold text-2xl italic">
-                One upload. Two outcomes.
+                Different uploads. Different outcomes.
               </h2>
             </div>
 
@@ -143,7 +143,7 @@ export default function CreatorPage() {
               <span className="inline-block bg-amber-100 border border-amber-300 text-amber-700 px-3 py-1 rounded-full font-bold text-sm">
                 Two ways to share your journey
               </span>{" "}
-              ---- Creators can share their authentic experiences in two
+              Creators can share their authentic experiences in two
               complementary formats:
             </p>
 
@@ -157,7 +157,7 @@ export default function CreatorPage() {
                     VeeVu™
                   </h3>
                   <p className="text-teal-700">
-                    a short, meaningful preview designed for product pages, ads,
+                    a short, meaningful preview designed for product pages, ads
                     and quick decisions.
                   </p>
                 </div>
@@ -172,7 +172,7 @@ export default function CreatorPage() {
                     iGlo™
                   </h3>
                   <p className="text-teal-700">
-                    a full journey log with photos, notes, reflections, and
+                    a full journey log with photos, notes, reflections and
                     verified results over time.
                   </p>
                 </div>
@@ -188,7 +188,7 @@ export default function CreatorPage() {
             {[
               {
                 title: "Upload your video",
-                desc: "Share product benefits, usage, and your authentic experience.",
+                desc: "Share product benefits, usage and your authentic experience.",
               },
               {
                 title: "VeeVu™ auto-created",
@@ -230,7 +230,7 @@ export default function CreatorPage() {
           <div className="mx-auto lg:max-w-[70%] bg-white rounded-lg p-6 mb-6">
             <form className="space-y-4">
               <div>
-                <label className="block text-teal-800 text-sm font-medium mb-1">
+                <label className="block text-teal-800 text-md font-medium mb-1">
                   Name
                 </label>
                 <input
@@ -239,7 +239,7 @@ export default function CreatorPage() {
                 />
               </div>
               <div>
-                <label className="block text-teal-800 text-sm font-medium mb-1">
+                <label className="block text-teal-800 text-md font-medium mb-1">
                   Email
                 </label>
                 <input
@@ -248,7 +248,7 @@ export default function CreatorPage() {
                 />
               </div>
               <div>
-                <label className="block text-teal-800 text-sm font-medium mb-1">
+                <label className="block text-teal-800 text-md font-medium mb-1">
                   Social Media
                 </label>
                 <input
@@ -258,7 +258,7 @@ export default function CreatorPage() {
                 />
               </div>
               <div>
-                <label className="block text-teal-800 text-sm font-medium mb-1">
+                <label className="block text-teal-800 text-md font-medium mb-1">
                   Why you want to join
                 </label>
                 <textarea
@@ -283,7 +283,7 @@ export default function CreatorPage() {
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 text-center mb-8">
+          <h2 className="text-4xl font-bold italic text-amber-300 text-center mb-8">
             Benefits
           </h2>
           <ul className="space-y-4 text-teal-100/90">

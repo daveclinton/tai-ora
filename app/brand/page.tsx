@@ -19,7 +19,7 @@ export default function BrandPage() {
   const capabilities = [
     {
       icon: FolderOpen,
-      title: "Source creator content across skincare, haircare, and wellness",
+      title: "Source creator content across skincare, haircare and wellness",
     },
     {
       icon: Play,
@@ -85,7 +85,7 @@ export default function BrandPage() {
                 Dual Asset Creation
               </h3>
               <p className="text-sm text-teal-700/90">
-                One creator, two assets with every upload
+                Different Uploads, Different Value
               </p>
             </div>
 
@@ -115,17 +115,22 @@ export default function BrandPage() {
           </div>
 
           <p className="text-teal-700/90 leading-relaxed">
-            One creator, two assets. With every upload, your brand receives both
-            a <span className="text-amber-600">VeeVu™</span> preview and an{" "}
+            Creators choose how they share their experience with your product: a{" "}
+            <span className="text-amber-600">VeeVu™</span> preview and an{" "}
             <span className="text-amber-600">iGlo™</span> journey.
           </p>
           <ul className="mt-4 space-y-2 text-teal-700/90">
-            <li>• VeeVu™ — short, high-impact previews that drive discovery</li>
             <li>
-              • iGlo™ — full, AI-verified journeys that prove results and build
-              trust
+              • VeeVu™ — short product previews designed for quick discovery and
+              decision-making.
             </li>
-            <li>• One upload, two outcomes — the hook and the proof</li>
+            <li>
+              • iGlo™ — authentic, AI-verified reviews and full journey logs
+              that build lasting trust.
+            </li>
+            <li>
+              • Different uploads, different outcomes — the hook and the proof
+            </li>
           </ul>
         </div>
       </section>
@@ -140,7 +145,7 @@ export default function BrandPage() {
               <Shield className="w-14 h-14 text-amber-600 opacity-60" />
             </div>
           </div>
-          <ul className="space-y-3 text-teal-700/90">
+          <ul className="space-y-3 text-xl text-teal-700/90">
             <li>• Consent-first licensing with transparent terms</li>
             <li>• Real creators, real results — no gimmicks, no scripts</li>
             <li>
@@ -165,7 +170,7 @@ export default function BrandPage() {
                   <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center opacity-70 group-hover:opacity-90 transition-opacity">
                     <item.icon className="w-8 h-8 text-amber-600" />
                   </div>
-                  <p className="text-teal-700/90 leading-relaxed">
+                  <p className="text-teal-700/90  text-lg leading-relaxed">
                     {item.title}
                   </p>
                 </div>
@@ -177,7 +182,7 @@ export default function BrandPage() {
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
         <div className="max-w-5xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
-          <h2 className="text-3xl font-light italic text-teal-800 mb-8 text-center">
+          <h2 className="text-3xl font-bold italic text-teal-800 mb-8 text-center">
             Licensing options
           </h2>
 

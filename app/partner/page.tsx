@@ -117,7 +117,7 @@ export default function PartnerPage() {
           />
         </div>
 
-        <h1 className="text-white text-5xl md:text-6xl font-light italic mb-4 leading-tight tracking-wide drop-shadow-lg">
+        <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
           Partner with Tai Ora
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
@@ -148,7 +148,7 @@ export default function PartnerPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-10">
             <Handshake className="w-8 h-8 text-amber-300" />
-            <h2 className="text-3xl font-light italic text-amber-300 text-center">
+            <h2 className="text-3xl font-bold italic text-amber-300 text-center">
               Why Partner With Us
             </h2>
           </div>
@@ -187,7 +187,7 @@ export default function PartnerPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-10">
             <Gift className="w-8 h-8 text-amber-300" />
-            <h2 className="text-3xl font-light italic text-amber-300 text-center">
+            <h2 className="text-3xl font-bold italic text-amber-300 text-center">
               Sponsorship Opportunities
             </h2>
           </div>
@@ -219,7 +219,7 @@ export default function PartnerPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-10">
             <Heart className="w-8 h-8 text-amber-300" />
-            <h2 className="text-3xl font-light italic text-amber-300 text-center">
+            <h2 className="text-3xl font-bold italic text-amber-300 text-center">
               The Principles That Shape Tai Ora
             </h2>
           </div>
@@ -253,7 +253,7 @@ export default function PartnerPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-10">
             <TrendingUp className="w-8 h-8 text-amber-300" />
-            <h2 className="text-3xl font-light italic text-amber-300 text-center">
+            <h2 className="text-3xl font-bold italic text-amber-300 text-center">
               Our Vision & Impact
             </h2>
           </div>
@@ -306,7 +306,7 @@ export default function PartnerPage() {
         <div className="mx-auto max-w-5xl bg-white rounded-2xl p-8 border border-amber-300/30 shadow-lg">
           <div className="flex items-center justify-center gap-4 mb-6">
             <Mail className="w-8 h-8 text-teal-800" />
-            <h2 className="text-3xl font-light italic text-teal-800 text-center">
+            <h2 className="text-3xl font-bold italic text-teal-800 text-center">
               Get In Touch
             </h2>
           </div>

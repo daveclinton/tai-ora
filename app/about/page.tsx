@@ -28,7 +28,7 @@ export default function AboutPage() {
           />
         </div>
 
-        <h1 className="text-white text-5xl md:text-6xl font-light italic mb-4 leading-tight tracking-wide drop-shadow-lg">
+        <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
           About Tai Ora
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
@@ -44,7 +44,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold text-teal-800">Our Story</h2>
           </div>
           <p className="text-teal-700/90 leading-relaxed">
-            Kia ora, I'm Tania Pickering, and Tai Ora is the vision that has
+            Kia ora, I'm Tania Pickering and Tai Ora is the vision that has
             called me home. I was born in Aotearoa New Zealand, where from a
             young age I faced challenges that built resilience and a
             determination to create something greater. My experiences overseas
@@ -77,7 +77,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex justify-center items-center mb-10">
             <Target className="text-amber-300 mr-2" size={28} />
-            <h2 className="text-3xl font-light italic text-amber-300">
+            <h2 className="text-3xl font-bold italic text-amber-300">
               Our Purpose
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex justify-center items-center mb-8">
             <Heart className="text-amber-300 mr-2" size={28} />
-            <h2 className="text-3xl font-light italic text-amber-300">
+            <h2 className="text-3xl font-bold italic text-amber-300">
               Our Principles
             </h2>
           </div>
@@ -235,7 +235,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex justify-center items-center mb-6">
             <Users className="text-amber-300 mr-2" size={28} />
-            <h2 className="text-2xl font-light italic text-amber-300">
+            <h2 className="text-2xl font-bold italic text-amber-300">
               Join Our Journey
             </h2>
           </div>
