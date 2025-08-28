@@ -1,5 +1,6 @@
 import { GoldenButton } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function CreatorPage() {
   return (
@@ -7,10 +8,12 @@ export default function CreatorPage() {
       <div className="relative min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20">
         <div className="w-36 h-36 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative shadow-lg shadow-amber-400/70 ring-2 ring-amber-300/50 mx-auto mb-6">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
-          <img
+          <Image
             src="/logo.png"
             alt="Tai Ora logo"
             className="w-full h-full object-cover relative z-10"
+            height={100}
+            width={100}
           />
         </div>
 
@@ -33,14 +36,17 @@ export default function CreatorPage() {
               {
                 title: "Earn fairly",
                 desc: "Get compensated for your authentic content and reviews",
+                // src="/earn.svg"
               },
               {
                 title: "Exclusive exposure",
                 desc: "Gain visibility with brands seeking genuine recommendations",
+                // src="/team-spirit.svg"
               },
               {
                 title: "Supportive community",
                 desc: "Join a network of like-minded creators focused on wellbeing",
+                // src="/visibility.svg"
               },
             ].map((benefit, i) => (
               <div key={i} className="text-center p-4">
