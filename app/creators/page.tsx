@@ -1,5 +1,6 @@
 import { GoldenButton } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
+import { Eye, Heart, Upload } from "lucide-react";
 import Image from "next/image";
 
 export default function CreatorPage() {
@@ -127,6 +128,60 @@ export default function CreatorPage() {
                 <p className="text-teal-100 text-sm">{item.desc}</p>
               </div>
             ))}
+          </div>
+          <div className="bg-white my-10 rounded-xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 flex items-center justify-center">
+                <Upload className="w-8 h-8 text-amber-600" />
+              </div>
+              <h2 className="text-teal-800 font-semibold text-2xl italic">
+                One upload. Two outcomes.
+              </h2>
+            </div>
+
+            <p className="mb-6 text-teal-700">
+              <span className="inline-block bg-amber-100 border border-amber-300 text-amber-700 px-3 py-1 rounded-full font-bold text-sm">
+                Two ways to share your journey
+              </span>{" "}
+              ---- Creators can share their authentic experiences in two
+              complementary formats:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-4">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <Eye className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="text-teal-800 text-lg font-semibold mb-2">
+                    VeeVu™
+                  </h3>
+                  <p className="text-teal-700">
+                    a short, meaningful preview designed for product pages, ads,
+                    and quick decisions.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="text-teal-800 text-lg font-semibold mb-2">
+                    iGlo™
+                  </h3>
+                  <p className="text-teal-700">
+                    a full journey log with photos, notes, reflections, and
+                    verified results over time.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="italic mt-3 text-amber-600">
+              Together, these build both discovery and trust.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
