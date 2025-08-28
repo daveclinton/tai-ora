@@ -252,12 +252,12 @@ export default function CreatorPage() {
             </li>
           </ul>
           <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-            <GoldenButton href="/" className="text-lg px-10 py-4">
+            <GoldenButton href="/" className="text-base py-4 lg:py-0">
               Apply Now
             </GoldenButton>
             <Button
               variant="outline"
-              className="border-2  border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-8 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
+              className="border-2  border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-6 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
             >
               Learn More
             </Button>

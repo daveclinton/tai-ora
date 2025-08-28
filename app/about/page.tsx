@@ -190,12 +190,12 @@ export default function AboutPage() {
             cultural connection.
           </p>
           <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-            <GoldenButton href="/creator" className="text-base py-4">
+            <GoldenButton href="/creator" className="text-base py-4 lg:py-0">
               Join as Creator
             </GoldenButton>
             <Button
               variant="outline"
-              className="border-2 border-teal-300 text-white hover:bg-teal-300/20 hover:border-teal-400 font-semibold px-10 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent"
+              className="border-2 border-teal-300 text-white hover:bg-teal-300/20 hover:border-teal-400 font-semibold px-10 py-6 text-base tracking-wide rounded-lg transition-colors bg-transparent"
             >
               Learn More
             </Button>
