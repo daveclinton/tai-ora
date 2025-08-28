@@ -13,7 +13,7 @@ export default function ContactPage() {
           />
         </div>
 
-        <h1 className="text-white text-5xl md:text-6xl font-light italic mb-4 leading-tight tracking-wide drop-shadow-lg">
+        <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
           Let's connect
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed mb-10">
@@ -109,7 +109,7 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center md:text-left">
-              <h3 className="text-amber-300 text-xl font-light mb-4">
+              <h3 className="text-amber-300 text-xl font-bold mb-4">
                 Get in touch
               </h3>
               <p className="text-teal-100 mb-2">Email us at:</p>
@@ -131,12 +131,12 @@ export default function ContactPage() {
             </div>
 
             <div className="text-center md:text-left">
-              <h3 className="text-amber-300 text-xl font-light mb-4">
+              <h3 className="text-amber-300 text-xl font-bold mb-4">
                 Follow us
               </h3>
               <div className="flex justify-center md:justify-start space-x-6">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/tai.ora/?igsh=MTN4c2RlempvNWg4Mw%3D%3D&fbclid=IwY2xjawMc67pleHRuA2FlbQIxMABicmlkETFBNldRdXE3YzR4N0c4VlZIAR4omKVx626zK1Oa_Jsbbnt0bqq7GWM6hNbNOS3hMvGdNAxlklJUw9xtPupwNQ_aem_3A1JIE04vvh2YQVldum8aw"
                   className="text-teal-100 hover:text-amber-300 transition transform hover:scale-110"
                 >
                   <svg
@@ -153,7 +153,7 @@ export default function ContactPage() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/tai-ora/"
                   className="text-teal-100 hover:text-amber-300 transition transform hover:scale-110"
                 >
                   <svg
@@ -163,6 +163,25 @@ export default function ContactPage() {
                     aria-hidden="true"
                   >
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/Tai.Ora.24.04.14"
+                  className="text-teal-100 hover:text-amber-300 transition transform hover:scale-110"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22.675 0h-21.35C.597 0 0 .598 0 1.333v21.333C0 23.403.597 24 1.325 
+      24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 
+      1.325 0 2.463.098 2.794.142v3.24h-1.918c-1.504 0-1.796.715-1.796 
+      1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 
+      22.667V1.333C24 .598 23.403 0 22.675 0z"
+                    />
                   </svg>
                 </a>
               </div>

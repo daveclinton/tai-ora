@@ -56,7 +56,7 @@ export default function BrandPage() {
           />
         </div>
 
-        <h1 className="text-white text-5xl md:text-6xl font-light italic mb-4 leading-tight tracking-wide drop-shadow-lg">
+        <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
           How Tai Ora Works
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
@@ -137,7 +137,7 @@ export default function BrandPage() {
 
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
         <div className="max-w-5xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
-          <h2 className="text-3xl font-light italic text-teal-800 mb-6 text-center">
+          <h2 className="text-3xl font-bold italic text-teal-800 mb-6 text-center">
             Ethical & inclusive by design
           </h2>
           <div className="flex justify-center mb-6">
@@ -157,7 +157,7 @@ export default function BrandPage() {
 
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
+          <h2 className="text-3xl font-bold italic text-amber-300 text-center mb-10">
             What you can do
           </h2>
           <div className="grid md:grid-cols-2 gap-8">

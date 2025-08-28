@@ -31,7 +31,7 @@ export default function Home() {
           </div>
 
           <div className="text-center max-w-md">
-            <h2 className="text-white text-4xl md:text-5xl font-light italic mb-6 leading-tight tracking-wide animate-fade-in drop-shadow-lg">
+            <h2 className="text-white text-4xl md:text-5xl font-bold italic mb-6 leading-tight tracking-wide animate-fade-in drop-shadow-lg">
               I SEE YOU
             </h2>
 
@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center">
-              <h2 className="text-white text-6xl font-light italic mb-6 leading-tight tracking-wide animate-fade-in">
+              <h2 className="text-white text-6xl font-bold italic mb-6 leading-tight tracking-wide animate-fade-in">
                 I SEE YOU
               </h2>
 
@@ -155,7 +155,7 @@ export default function Home() {
 
       <div className="w-full py-8 px-6 relative bg-teal-800">
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-light text-center text-white mb-12 italic">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 italic">
             Our Innovations
           </h2>
 
@@ -207,7 +207,7 @@ export default function Home() {
 
       <div className="w-full py-16 px-6 bg-gradient-to-r from-amber-500/20 to-teal-600/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light text-white mb-6 italic">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 italic">
             Guided by values, grounded in culture and wellbeing.
           </h2>
           <p className="text-3xl text-bold text-teal-100">
@@ -218,7 +218,7 @@ export default function Home() {
 
       <div className="w-full py-16 px-6 bg-teal-800">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Join Our Waitlist
           </h2>
           <p className="text-teal-100 mb-8 text-xl">

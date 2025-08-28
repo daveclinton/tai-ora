@@ -98,7 +98,7 @@ export default function HowItWorks() {
           />
         </div>
 
-        <h1 className="text-white text-5xl md:text-6xl font-light italic mb-4 leading-tight tracking-wide drop-shadow-lg">
+        <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
           How Tai Ora Works
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">

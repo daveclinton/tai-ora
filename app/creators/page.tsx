@@ -18,7 +18,7 @@ export default function CreatorPage() {
           />
         </div>
 
-        <h1 className="text-white text-5xl md:text-6xl font-light italic mb-4 leading-tight tracking-wide drop-shadow-lg">
+        <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
           Turn your passion into purpose
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
@@ -72,7 +72,7 @@ export default function CreatorPage() {
 
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-light italic text-amber-300 text-center mb-10">
+          <h2 className="text-3xl font-bold italic text-amber-300 text-center mb-10">
             How It Works
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-center mb-16 relative">
@@ -219,7 +219,7 @@ export default function CreatorPage() {
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-5xl bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/30 text-center">
-          <h2 className="text-3xl font-light italic text-amber-300 mb-6">
+          <h2 className="text-3xl font-bold italic text-amber-300 mb-6">
             Apply to Become a Creator
           </h2>
           <p className="text-teal-100 mb-8">
