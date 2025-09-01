@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import JoinWaitlist from "@/components/join-waitlist";
+import { SecondaryLink } from "@/components/secondary-link";
 
 export default function Home() {
   return (
@@ -46,12 +47,9 @@ export default function Home() {
               <GoldenLink href="/creators" className="text-lg px-10">
                 I'M A CREATOR
               </GoldenLink>
-              <Button
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold px-6 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent backdrop-blur-sm"
-              >
+              <SecondaryLink href="/brand" className="tetx-lg px-10">
                 I'M A BRAND
-              </Button>
+              </SecondaryLink>
             </div>
           </div>
         </div>
