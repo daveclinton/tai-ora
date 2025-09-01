@@ -310,7 +310,10 @@ export default function HowItWorks() {
           >
             For Creators
           </GoldenLink>
-          <SecondaryLink href="/brand" className="tetx-lg px-10 cursor-pointer">
+          <SecondaryLink
+            href="/brand"
+            className="tetx-lg px-10 py-3 cursor-pointer"
+          >
             I'M A BRAND
           </SecondaryLink>
         </div>
