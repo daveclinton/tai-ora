@@ -8,7 +8,7 @@ interface GoldenLinkProps {
   className?: string;
 }
 
-export function GoldenButton({ href, children, className }: GoldenLinkProps) {
+export function GoldenLink({ href, children, className }: GoldenLinkProps) {
   return (
     <Link
       href={href}

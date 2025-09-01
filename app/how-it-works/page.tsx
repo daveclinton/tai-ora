@@ -1,4 +1,4 @@
-import { GoldenButton } from "@/components/golden-button";
+import { GoldenLink } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
 import {
   Upload,
@@ -305,12 +305,12 @@ export default function HowItWorks() {
 
         {/* CTA Buttons */}
         <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-          <GoldenButton
+          <GoldenLink
             href="/creators"
             className="text-base text-white py-4 lg:py-0"
           >
             For Creators
-          </GoldenButton>
+          </GoldenLink>
           <Button
             variant="outline"
             className="border-2  border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-6 text-lg tracking-wide rounded-lg transition-colors bg-transparent"

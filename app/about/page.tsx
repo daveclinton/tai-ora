@@ -1,4 +1,4 @@
-import { GoldenButton } from "@/components/golden-button";
+import { GoldenLink } from "@/components/golden-button";
 import { Button } from "@/components/ui/button";
 import {
   Heart,
@@ -6,11 +6,8 @@ import {
   Globe,
   Sparkles,
   Target,
-  Eye,
   Shield,
   HandHeart,
-  Trees,
-  Star,
   CircleDashed,
   Mail,
   Clock,
@@ -258,12 +255,12 @@ export default function AboutPage() {
             when we launch in December 2025.
           </p>
           <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-            <GoldenButton
+            <GoldenLink
               href="/waitlist"
               className="text-base text-white py-4 lg:py-0"
             >
               Join Waitlist
-            </GoldenButton>
+            </GoldenLink>
             <Button
               variant="outline"
               className="border-2 border-teal-300 text-white hover:bg-teal-300/20 hover:border-teal-400 font-semibold px-10 py-6 text-base tracking-wide rounded-lg transition-colors bg-transparent"

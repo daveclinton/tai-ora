@@ -1,4 +1,4 @@
-import { GoldenButton } from "@/components/golden-button";
+import { GoldenLink } from "@/components/golden-button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -43,9 +43,9 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col gap-4 justify-center">
-              <GoldenButton href="/creators" className="text-lg px-10">
+              <GoldenLink href="/creators" className="text-lg px-10">
                 I'M A CREATOR
-              </GoldenButton>
+              </GoldenLink>
               <Button
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold px-6 py-4 text-base tracking-wide rounded-lg transition-colors bg-transparent backdrop-blur-sm"
@@ -86,9 +86,9 @@ export default function Home() {
                 aroha welcoming all cultures with open hearts
               </p>
               <div className="flex flex-row gap-6 justify-center">
-                <GoldenButton href="/creators" className="text-lg">
+                <GoldenLink href="/creators" className="text-lg">
                   I'M A CREATOR
-                </GoldenButton>
+                </GoldenLink>
                 <Button
                   variant="outline"
                   className="border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-5 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
@@ -250,9 +250,9 @@ export default function Home() {
             </ul>
           </div>
 
-          <GoldenButton href="/waitlist" className="text-lg px-10 py-4">
+          <GoldenLink href="/waitlist" className="text-lg px-10 py-4">
             Join the Waitlist
-          </GoldenButton>
+          </GoldenLink>
         </div>
       </div>
 

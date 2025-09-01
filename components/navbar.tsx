@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { GoldenButton } from "@/components/golden-button";
+import { GoldenLink } from "@/components/golden-button";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -355,12 +355,12 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:block">
-            <GoldenButton
+            <GoldenLink
               href="/contact"
               className="px-3 py-1.5 text-xs lg:px-4 lg:py-2 lg:text-sm"
             >
               Let's Connect
-            </GoldenButton>
+            </GoldenLink>
           </div>
 
           <button
@@ -468,9 +468,9 @@ export default function Navbar() {
           <div className="absolute bottom-32 left-8 right-8 h-px bg-gradient-to-r from-transparent via-amber-400/40 to-transparent"></div>
 
           <div className="pt-4">
-            <GoldenButton href="/contact" className="px-6 py-2 text-base">
+            <GoldenLink href="/contact" className="px-6 py-2 text-base">
               LET'S CONNECT
-            </GoldenButton>
+            </GoldenLink>
           </div>
         </div>
       </div>
