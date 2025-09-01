@@ -1,4 +1,4 @@
-import { GoldenLink } from "@/components/golden-button";
+import { GoldenLink } from "@/components/golden-link";
 import { Button } from "@/components/ui/button";
 import {
   Heart,

@@ -1,4 +1,4 @@
-import { GoldenLink } from "@/components/golden-button";
+import { GoldenLink } from "@/components/golden-link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

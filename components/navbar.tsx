@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { GoldenLink } from "@/components/golden-button";
+import { GoldenLink } from "@/components/golden-link";
 import Link from "next/link";
 
 export default function Navbar() {
