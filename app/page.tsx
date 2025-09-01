@@ -1,6 +1,5 @@
 import { GoldenLink } from "@/components/golden-link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import JoinWaitlist from "@/components/join-waitlist";
 import { SecondaryLink } from "@/components/secondary-link";

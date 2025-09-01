@@ -1,6 +1,5 @@
-import { GoldenLink } from "@/components/golden-link";
 import JoinWaitlist from "@/components/join-waitlist";
-import { Button } from "@/components/ui/button";
+
 import {
   Heart,
   Users,

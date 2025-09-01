@@ -1,4 +1,5 @@
 import { GoldenLink } from "@/components/golden-link";
+import JoinWaitlist from "@/components/join-waitlist";
 import { SecondaryLink } from "@/components/secondary-link";
 import {
   Upload,
@@ -6,14 +7,12 @@ import {
   Eye,
   Heart,
   Users,
-  Play,
-  Zap,
-  Camera,
-  CheckCircle,
   Handshake,
-  Target,
   Shield,
   Globe,
+  FileText,
+  Scissors,
+  Notebook,
 } from "lucide-react";
 
 export default function HowItWorks() {
@@ -29,17 +28,17 @@ export default function HowItWorks() {
       description: "Title, product, brand, category, key benefits.",
     },
     {
-      icon: Zap,
+      icon: Scissors,
       title: "Auto VeeVu™",
       description: "Tai Ora generates the preview cut from your journey.",
     },
     {
-      icon: Camera,
+      icon: Notebook,
       title: "iGlo™ builds over time",
       description: "Add photos, notes and reflections as you go.",
     },
     {
-      icon: CheckCircle,
+      icon: Globe,
       title: "Publish & license",
       description: "Approve where your content appears and how it's used.",
     },
@@ -47,19 +46,19 @@ export default function HowItWorks() {
 
   const brandBenefits = [
     {
-      icon: Heart,
-      title: "Authentic social-proof",
-      description: "that's consented and creator-owned.",
+      icon: Users,
+      title: "Authentic previews and reviews",
+      description: "created by real people",
     },
     {
-      icon: Play,
-      title: "Performance-ready previews",
-      description: "(VeeVu™) for ads, PDPs and retail.",
+      icon: FileText,
+      title: "Transparent licensing opportunities",
+      description: "with creator content",
     },
     {
-      icon: Target,
-      title: "Embedded journeys",
-      description: "(iGlo™) that increase shopper confidence.",
+      icon: Handshake,
+      title: "A platform built on culture, ethics and trust",
+      description: "that leads to loyalty",
     },
   ];
 
@@ -100,9 +99,10 @@ export default function HowItWorks() {
         <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
           How Tai Ora Works
         </h1>
-        <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
-          A wellbeing platform built on authenticity, connection and aroha
-          welcoming all cultures with open hearts
+        <p className="text-white max-w-2xl text-xl leading-relaxed">
+          Wellbeing is personal. So is Tai Ora. We guide users to creators and
+          brands that align with their individual journeys, building trust,
+          connection and better choices for everyone.
         </p>
       </div>
 
@@ -247,7 +247,7 @@ export default function HowItWorks() {
               <Handshake className="w-8 h-8 text-amber-600" />
             </div>
             <h2 className="text-teal-800 font-semibold text-2xl italic">
-              What Brands Receive
+              For Brands
             </h2>
           </div>
 
@@ -318,6 +318,7 @@ export default function HowItWorks() {
           </SecondaryLink>
         </div>
       </div>
+      <JoinWaitlist />
     </section>
   );
 }

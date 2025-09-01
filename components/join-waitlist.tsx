@@ -37,7 +37,7 @@ const JoinWaitlist = () => {
           </ul>
         </div>
 
-        <GoldenLink href="/waitlist" className="text-lg px-10 py-4">
+        <GoldenLink href="/waitlist" className="text-lg text-white px-10 py-4">
           Join the Waitlist
         </GoldenLink>
       </div>
