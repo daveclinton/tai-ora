@@ -17,7 +17,8 @@ export default function Navbar() {
     | "/brand"
     | "/about"
     | "/partner"
-    | "/contact";
+    | "/contact"
+    | "/waitlist";
 
   const pathToPageMap: Record<ValidPath, string> = {
     "/": "HOME",
@@ -27,6 +28,7 @@ export default function Navbar() {
     "/about": "ABOUT US",
     "/partner": "PARTNER WITH US",
     "/contact": "CONTACT US",
+    "/waitlist": "WAITLIST",
   };
 
   const activePage = pathToPageMap[pathname as ValidPath] || "HOME";

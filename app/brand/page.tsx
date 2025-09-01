@@ -1,3 +1,4 @@
+import { GoldenLink } from "@/components/golden-link";
 import JoinWaitlist from "@/components/join-waitlist";
 
 import {
@@ -81,7 +82,11 @@ export default function BrandPage() {
           Partner with Tai Ora to showcase your products through authentic
           previews and real journeys that build trust and loyalty.
         </p>
+        <GoldenLink href="/waitlist" className="my-8 py-4 text-white">
+          Register Your Interest
+        </GoldenLink>
       </div>
+
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
           <div className="flex items-center gap-4 mb-6">
@@ -113,6 +118,7 @@ export default function BrandPage() {
           </div>
         </div>
       </section>
+
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
         <div className="max-w-5xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
           <h2 className="text-3xl font-bold italic text-teal-800 mb-6 text-center">
