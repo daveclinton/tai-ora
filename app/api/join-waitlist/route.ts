@@ -12,16 +12,18 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "in-v3.mailjet.com",
+      port: 587,
+      secure: false,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.MAILJET_API_KEY,
+        pass: process.env.MAILJET_SECRET_KEY,
       },
     });
+
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: process.env.FROM_EMAIL,
       to: "hello@taiora.ai",
       subject: "🎉 New Waitlist Signup - Taiora AI",
       html: `
@@ -40,7 +42,7 @@ export async function POST(request: NextRequest) {
     };
 
     const confirmationMailOptions = {
-      from: process.env.EMAIL_USER,
+      from: process.env.FROM_EMAIL,
       to: email,
       subject: "Welcome to the Taiora AI Waitlist! 🚀",
       html: `
