@@ -2,10 +2,12 @@ import { GoldenButton } from "@/components/golden-button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { CheckCircle } from "lucide-react";
 
 export default function Home() {
   return (
     <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70">
+      {/* Hero Banner */}
       <div className="lg:hidden relative min-h-screen flex flex-col">
         <div className="absolute inset-0 flex">
           <div className="w-1/2 h-full relative overflow-hidden">
@@ -122,90 +124,139 @@ export default function Home() {
         </svg>
       </div>
 
+      {/* Intro / What is Tai Ora */}
       <div className="w-full py-16 px-6 bg-teal-800">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
-          {/* <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-300/30 shadow-lg"> */}
-          {/* <img
-            src="/founder.jpg"
-            alt="Tania Pickering, Founder of Tai Ora"
-            className="w-full h-full"
-          /> */}
-          <Avatar className="w-48 h-48 overflow-hidden border-4 border-amber-300/30 shadow-lg">
-            <AvatarImage src="/profile.png" />
-            <AvatarFallback>TP</AvatarFallback>
-          </Avatar>
-          {/* </div> */}
-          <div className="flex-1 text-center md:text-left">
-            <blockquote className="text-white text-xl italic mb-4 leading-relaxed">
-              "Tai Ora is designed to help people feel seen, supported and
-              empowered."
-            </blockquote>
-            <div className="text-amber-300 font-semibold text-lg">
-              - Tania Pickering
-            </div>
-            <Link
-              href="/about"
-              className="inline-block mt-4 text-teal-100 hover:text-amber-300 transition-colors"
-            >
-              Learn more about our story →
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full py-8 px-6 relative bg-teal-800">
-        <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 italic">
-            Our Innovations
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 italic">
+            What is Tai Ora?
           </h2>
+          <p className="text-teal-100 text-lg md:text-xl mb-8 leading-relaxed max-w-3xl mx-auto">
+            Tai Ora is a digital wellbeing platform that connects users with
+            trustworthy creators and ethical brands. We cut through the
+            influencer hype to deliver clarity, authenticity and collective
+            wellbeing through innovative tools like VeeVu™ and iGlo™.
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
-              <h3 className="text-2xl font-semibold text-amber-300 mb-4">
-                VeeVu™
-              </h3>
-              <p className="text-teal-800 leading-relaxed">
-                Instantly transforms long product videos into short, powerful
-                previews that highlight what truly matters. No gimmicks, just
-                clear, authentic insights designed to save time and boost
-                discovery.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
-              <h3 className="text-2xl font-semibold text-amber-300 mb-4">
-                iGlo™
-              </h3>
-              <p className="text-teal-800 leading-relaxed">
-                Lets you document your full product journey with photos, notes,
-                and reflections. Over time, it creates an AI-verified record of
-                real results, building trust, empowering your voice, and
-                offering brands authentic proof.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10">
-              <h3 className="text-2xl font-semibold text-amber-300 mb-4">
-                Coming Soon
-              </h3>
-              <p className="text-teal-800 leading-relaxed">
-                <span className="block font-medium mb-2">LydiaGlo™</span>
-                Empowering recovery through healing, culture and innovation.
-                <span className="block font-medium mt-4 mb-2">SoulGlo™</span>
-                Nourish your spirit with guided journeys for inner peace.
-              </p>
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 mt-12">
+            <Avatar className="w-48 h-48 overflow-hidden border-4 border-amber-300/30 shadow-lg">
+              <AvatarImage src="/profile.png" />
+              <AvatarFallback>TP</AvatarFallback>
+            </Avatar>
+            <div className="flex-1 text-center md:text-left">
+              <blockquote className="text-white text-xl italic mb-4 leading-relaxed">
+                "Tai Ora is designed to help people feel seen, supported and
+                empowered in their wellbeing journey."
+              </blockquote>
+              <div className="text-amber-300 font-semibold text-lg">
+                - Tania Pickering, Founder
+              </div>
               <Link
-                href="/coming-soon"
-                className="mt-4 inline-block text-amber-600 hover:text-amber-700 font-medium"
+                href="/about"
+                className="inline-block mt-4 text-teal-100 hover:text-amber-300 transition-colors"
               >
-                Get early access →
+                Learn more about our story →
               </Link>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Features Section with VeeVu and iGlo */}
+      <div className="w-full py-16 px-6 relative bg-teal-800">
+        <div className="max-w-6xl mx-auto relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 italic">
+            Our Innovations
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white rounded-2xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10 flex flex-col items-center text-center">
+              <div className="w-24 h-24 mb-6 flex items-center justify-center ">
+                <img
+                  src="/VeeVu.png"
+                  alt="VeeVu logo"
+                  className="w-full h-full rounded-full object-contain"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold text-amber-600 mb-4">
+                VeeVu™
+              </h3>
+              <p className="text-teal-800 leading-relaxed mb-4">
+                Watch authentic previews through VeeVu™: see product benefits in
+                seconds, no hype.
+              </p>
+              <p className="text-teal-700">
+                Instantly transforms long product videos into short, powerful
+                previews that highlight what truly matters. No gimmicks, just
+                clear, authentic insights.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 border border-amber-300/20 hover:border-amber-300/40 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/10 flex flex-col items-center text-center">
+              <div className="w-24 h-24 mb-6 flex items-center justify-center">
+                <img
+                  src="/iGloIcon.png"
+                  alt="iGlo logo"
+                  className="w-full h-full object-contain rounded-full"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold text-amber-600 mb-4">
+                iGlo™
+              </h3>
+              <p className="text-teal-800 leading-relaxed mb-4">
+                Follow trustworthy journeys on iGlo™: capture reflections,
+                photos and progress over time.
+              </p>
+              <p className="text-teal-700">
+                Document your full product journey with photos, notes, and
+                reflections. Creates an AI-verified record of real results,
+                building trust and offering authentic proof.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Join Waitlist Section */}
       <div className="w-full py-16 px-6 bg-gradient-to-r from-amber-500/20 to-teal-600/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 italic">
+            Join Our Waitlist
+          </h2>
+          <p className="text-teal-100 text-xl mb-2">Launching December 2025</p>
+          <p className="text-teal-100 text-lg mb-8 max-w-3xl mx-auto">
+            Tai Ora begins with VeeVu™ and iGlo™: authentic previews and
+            trustworthy journeys that cut through the hype and show what really
+            works.
+          </p>
+
+          <div className="bg-white/90 rounded-2xl p-8 mb-10 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-semibold text-teal-800 mb-6">
+              Soon, you will be able to:
+            </h3>
+            <ul className="space-y-4 text-left">
+              {[
+                "Watch authentic previews through VeeVu™: see product benefits in seconds, no hype.",
+                "Follow trustworthy journeys on iGlo™: capture reflections, photos and progress over time.",
+                "Make better choices with clarity and confidence.",
+              ].map((item, index) => (
+                <li key={index} className="flex items-start">
+                  <CheckCircle
+                    className="text-amber-600 mr-3 mt-1 flex-shrink-0"
+                    size={20}
+                  />
+                  <span className="text-teal-800">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <GoldenButton href="/waitlist" className="text-lg px-10 py-4">
+            Join the Waitlist
+          </GoldenButton>
+        </div>
+      </div>
+
+      <div className="w-full py-12 px-6 bg-teal-800">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 italic">
             Guided by values, grounded in culture and wellbeing.
@@ -213,38 +264,6 @@ export default function Home() {
           <p className="text-3xl text-bold text-teal-100">
             Created for Everyone.
           </p>
-        </div>
-      </div>
-
-      <div className="w-full py-16 px-6 bg-teal-800">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Join Our Waitlist
-          </h2>
-          <p className="text-teal-100 mb-8 text-xl">
-            Be the first to experience our new wellbeing tools and features
-          </p>
-
-          <form className="flex flex-col md:flex-row gap-4 justify-center">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="px-4 py-3 rounded-lg border border-amber-300/30 focus:outline-none focus:ring-2 focus:ring-amber-300 bg-teal-900/50 text-white placeholder-teal-200"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="px-4 py-3 rounded-lg border border-amber-300/30 focus:outline-none focus:ring-2 focus:ring-amber-300 bg-teal-900/50 text-white placeholder-teal-200"
-              required
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-teal-900 font-semibold rounded-lg transition-colors"
-            >
-              Get Early Access
-            </button>
-          </form>
         </div>
       </div>
     </section>
