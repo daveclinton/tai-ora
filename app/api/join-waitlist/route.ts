@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: process.env.FROM_EMAIL,
-      to: "hello@taiora.ai",
+      to: "tai-ora@outlook.com",
       subject: "🎉 New Waitlist Signup - Taiora AI",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
