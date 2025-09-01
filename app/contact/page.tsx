@@ -97,7 +97,7 @@ export default function ContactPage() {
             </div>
 
             <div className="pt-4">
-              <Button className="w-full text-base bg-teal-800 text-white py-4">
+              <Button className="w-full text-base bg-yellow-500 text-white py-4">
                 Send Message
               </Button>
             </div>
