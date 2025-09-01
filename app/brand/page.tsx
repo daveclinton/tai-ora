@@ -1,5 +1,5 @@
+import GetEarlyAccess from "@/components/get-early-access";
 import { GoldenLink } from "@/components/golden-link";
-import JoinWaitlist from "@/components/join-waitlist";
 
 import {
   Handshake,
@@ -238,7 +238,7 @@ export default function BrandPage() {
           </p>
         </div>
       </section>
-      <JoinWaitlist />
+      <GetEarlyAccess />
     </section>
   );
 }
