@@ -11,9 +11,8 @@ const JoinWaitlist = () => {
         </h2>
         <p className="text-teal-100 text-xl mb-2">Launching December 2025</p>
         <p className="text-teal-100 text-lg mb-8 max-w-3xl mx-auto">
-          Tai Ora begins with VeeVu™ and iGlo™: authentic previews and
-          trustworthy journeys that cut through the hype and show what really
-          works.
+          Join now to get early access to authentic previews and journeys that
+          cut through the hype and show what really works.
         </p>
 
         <div className="bg-white/90 rounded-2xl p-8 mb-10 max-w-3xl mx-auto">
@@ -38,7 +37,7 @@ const JoinWaitlist = () => {
         </div>
 
         <GoldenLink href="/waitlist" className="text-lg text-white px-10 py-4">
-          Join the Waitlist
+          Get Early Access
         </GoldenLink>
       </div>
     </div>

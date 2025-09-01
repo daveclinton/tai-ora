@@ -38,23 +38,34 @@ export default function Home() {
             </h2>
 
             <p className="text-white text-base md:text-lg mb-8 leading-relaxed drop-shadow-md">
-              A wellbeing platform built on authenticity, connection and aroha
-              welcoming all cultures with open hearts
+              Tai Ora connects creators, brands and users through authentic
+              product journeys, with VeeVu™ previews and iGlo™ reviews that help
+              people choose with confidence.
             </p>
 
             <div className="flex flex-col gap-4 justify-center">
-              <GoldenLink
-                href="/creators"
-                className="tetx-lg px-10 cursor-pointer"
-              >
-                I'M A CREATOR
-              </GoldenLink>
-              <SecondaryLink
-                href="/brand"
-                className="tetx-lg px-10 cursor-pointer"
-              >
-                I'M A BRAND
-              </SecondaryLink>
+              <div>
+                <GoldenLink
+                  href="/creators"
+                  className="text-lg text-white px-10 py-3 cursor-pointer w-full flex justify-center"
+                >
+                  I'M A CREATOR
+                </GoldenLink>
+                <p className="text-white text-sm mt-2 text-center drop-shadow-md">
+                  Share your authentic journey and voice.
+                </p>
+              </div>
+              <div>
+                <SecondaryLink
+                  href="/brand"
+                  className="text-lg px-10 py-3 cursor-pointer w-full flex justify-center"
+                >
+                  I'M A BRAND
+                </SecondaryLink>
+                <p className="text-white text-sm mt-2 text-center drop-shadow-md">
+                  Authentic previews and reviews created by real people.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -85,19 +96,30 @@ export default function Home() {
               </h2>
 
               <p className="text-teal-100 text-xl mb-10 leading-relaxed px-4">
-                A wellbeing platform built on authenticity, connection, and
-                aroha welcoming all cultures with open hearts
+                Tai Ora connects creators, brands and users through authentic
+                product journeys, with VeeVu™ previews and iGlo™ reviews that
+                help people choose with confidence.
               </p>
               <div className="flex flex-row gap-6 justify-center">
-                <GoldenLink href="/creators" className="text-lg">
-                  I'M A CREATOR
-                </GoldenLink>
-                <SecondaryLink
-                  href="/brand"
-                  className="tetx-lg py-3 cursor-pointer"
-                >
-                  I'M A BRAND
-                </SecondaryLink>
+                <div className="flex flex-col items-center">
+                  <GoldenLink
+                    href="/creators"
+                    className="text-lg text-white px-10 py-3"
+                  >
+                    I'M A CREATOR
+                  </GoldenLink>
+                  <p className="text-white text-sm mt-2 text-center">
+                    Share your authentic journey and voice.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <SecondaryLink href="/brand" className="text-lg px-10 py-3">
+                    I'M A BRAND
+                  </SecondaryLink>
+                  <p className="text-white text-sm mt-2 text-center">
+                    Authentic previews and reviews created by real people.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
