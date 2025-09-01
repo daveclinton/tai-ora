@@ -44,10 +44,16 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col gap-4 justify-center">
-              <GoldenLink href="/creators" className="text-lg px-10">
+              <GoldenLink
+                href="/creators"
+                className="tetx-lg px-10 cursor-pointer"
+              >
                 I'M A CREATOR
               </GoldenLink>
-              <SecondaryLink href="/brand" className="tetx-lg px-10">
+              <SecondaryLink
+                href="/brand"
+                className="tetx-lg px-10 cursor-pointer"
+              >
                 I'M A BRAND
               </SecondaryLink>
             </div>
@@ -87,12 +93,12 @@ export default function Home() {
                 <GoldenLink href="/creators" className="text-lg">
                   I'M A CREATOR
                 </GoldenLink>
-                <Button
-                  variant="outline"
-                  className="border-2 border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-5 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
+                <SecondaryLink
+                  href="/brand"
+                  className="tetx-lg py-3 cursor-pointer"
                 >
                   I'M A BRAND
-                </Button>
+                </SecondaryLink>
               </div>
             </div>
           </div>
