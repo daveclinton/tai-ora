@@ -1,5 +1,5 @@
 import { GoldenLink } from "@/components/golden-link";
-import { Button } from "@/components/ui/button";
+import { SecondaryLink } from "@/components/secondary-link";
 import {
   Upload,
   Video,
@@ -7,7 +7,6 @@ import {
   Heart,
   Users,
   Play,
-  FileText,
   Zap,
   Camera,
   CheckCircle,
@@ -311,12 +310,9 @@ export default function HowItWorks() {
           >
             For Creators
           </GoldenLink>
-          <Button
-            variant="outline"
-            className="border-2  border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-6 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
-          >
-            For Brands
-          </Button>
+          <SecondaryLink href="/brand" className="tetx-lg px-10 cursor-pointer">
+            I'M A BRAND
+          </SecondaryLink>
         </div>
       </div>
     </section>
