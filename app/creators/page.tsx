@@ -27,7 +27,57 @@ export default function CreatorPage() {
         </p>
       </div>
 
-      <section className="px-6 py-12">
+      <section className="px-6 py-12 bg-white/5 backdrop-blur-sm">
+        <div className="max-w-5xl mx-auto justify-center items-center flex flex-col gap-3">
+          <h2 className="text-3xl font-bold italic text-amber-300 text-center mb-8">
+            Creators: Why Join?
+          </h2>
+          <div className="bg-white backdrop-blur-sm rounded-2xl p-8 border border-amber-300/30">
+            <p className="text-teal-900 text-lg mb-6 text-center">
+              Tai Ora is inviting early creators to help shape a new way of
+              sharing and earning. With VeeVu™ and iGlo™, you can:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              {[
+                {
+                  title: "Share your authentic journey and voice",
+                  icon: "🗣️",
+                },
+                {
+                  title: "Build ownership of your story and content",
+                  icon: "📝",
+                },
+                {
+                  title:
+                    "Earn opportunities through ethical brand partnerships",
+                  icon: "💼",
+                },
+                {
+                  title: "Help people make better, more informed choices",
+                  icon: "🤝",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-start gap-4 p-4 bg-amber-100/10 rounded-lg"
+                >
+                  <span className="text-2xl">{item.icon}</span>
+                  <p className="text-teal-700 text-lg">{item.title}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <GoldenLink
+            href="/waitlist"
+            className="text-lg px-10 py-4 text-white"
+          >
+            Apply for Early Access
+          </GoldenLink>
+        </div>
+      </section>
+
+      {/* <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
           <h2 className="text-2xl font-semibold text-teal-800 mb-4">
             Why Join as a Creator?
@@ -68,7 +118,7 @@ export default function CreatorPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
@@ -281,7 +331,7 @@ export default function CreatorPage() {
         </div>
       </section>
 
-      <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
+      {/* <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold italic text-amber-300 text-center mb-8">
             Benefits
@@ -309,7 +359,7 @@ export default function CreatorPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
     </section>
   );
 }
