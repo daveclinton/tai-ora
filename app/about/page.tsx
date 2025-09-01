@@ -122,7 +122,7 @@ export default function AboutPage() {
               Our Purpose
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg mb-10">
+          <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-teal-200 shadow-lg mb-10">
             <p className="text-teal-700/90 text-center text-lg leading-relaxed">
               Our purpose is simple: to help people make confident choices about
               their wellbeing. We do this by connecting users with trustworthy
@@ -211,7 +211,7 @@ export default function AboutPage() {
               Our Vision
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto bg-white/90 rounded-2xl p-8 border border-teal-200 shadow-lg mb-6">
+          <div className="max-w-5xl mx-auto bg-white/90 rounded-2xl p-8 border border-teal-200 shadow-lg mb-6">
             <p className="text-teal-700/90 text-center text-lg leading-relaxed">
               We envision a world where wellbeing is personal, trusted and
               accessible to everyone. Tai Ora will grow into a wider ecosystem
