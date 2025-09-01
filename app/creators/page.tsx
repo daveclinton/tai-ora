@@ -80,7 +80,7 @@ export default function CreatorPage() {
           </div>
           <GoldenLink
             href="/waitlist"
-            className="text-lg px-10 py-4 text-white"
+            className="text-lg px-10 py-3 text-white"
           >
             Apply for Early Access
           </GoldenLink>
