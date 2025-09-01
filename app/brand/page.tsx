@@ -2,8 +2,6 @@ import JoinWaitlist from "@/components/join-waitlist";
 
 import {
   Handshake,
-  Layers,
-  TrendingUp,
   FolderOpen,
   Play,
   Code,
@@ -13,6 +11,9 @@ import {
   FileText,
   Users,
   Shield,
+  CheckCircle,
+  Heart,
+  Globe,
 } from "lucide-react";
 
 export default function BrandPage() {
@@ -43,6 +44,23 @@ export default function BrandPage() {
       title: "Measure performance with transparent, privacy-safe analytics",
     },
   ];
+  const brandBenefits = [
+    {
+      icon: Users,
+      title: "Authentic previews and reviews",
+      description: "created by real people",
+    },
+    {
+      icon: FileText,
+      title: "Transparent licensing opportunities",
+      description: "with creator content",
+    },
+    {
+      icon: Handshake,
+      title: "A platform built on culture, ethics and trust",
+      description: "that leads to loyalty",
+    },
+  ];
 
   return (
     <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70">
@@ -57,84 +75,44 @@ export default function BrandPage() {
         </div>
 
         <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-4 leading-tight tracking-wide drop-shadow-lg">
-          How Tai Ora Works
+          Match with your true customers
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed">
-          A wellbeing platform built on authenticity, connection and aroha
-          welcoming all cultures with open hearts
+          Partner with Tai Ora to showcase your products through authentic
+          previews and real journeys that build trust and loyalty.
         </p>
       </div>
-
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center">
-              <Handshake className="w-8 h-8 text-amber-600 opacity-80" />
+            <div className="w-12 h-12 flex items-center justify-center">
+              <Handshake className="w-8 h-8 text-amber-600" />
             </div>
-            <h2 className="text-2xl font-semibold text-teal-800">
-              Why partner with Tai Ora?
+            <h2 className="text-teal-800 font-semibold text-2xl italic">
+              For Brands
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="w-16 h-16 mb-3 flex items-center justify-center">
-                <Layers className="w-10 h-10 text-amber-600 opacity-70" />
+          <div className="space-y-4">
+            {brandBenefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="flex items-start gap-4 p-4 rounded-lg hover:bg-teal-50/50 transition-colors"
+              >
+                <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                  <benefit.icon className="w-6 h-6 text-amber-600" />
+                </div>
+                <div>
+                  <span className="font-semibold text-teal-800">
+                    {benefit.title}
+                  </span>
+                  <span className="text-teal-700"> {benefit.description}</span>
+                </div>
               </div>
-              <h3 className="font-semibold text-teal-800 mb-2">
-                Dual Asset Creation
-              </h3>
-              <p className="text-sm text-teal-700/90">
-                Different Uploads, Different Value
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="w-16 h-16 mb-3 flex items-center justify-center">
-                <TrendingUp className="w-10 h-10 text-amber-600 opacity-70" />
-              </div>
-              <h3 className="font-semibold text-teal-800 mb-2">
-                Proven Results
-              </h3>
-              <p className="text-sm text-teal-700/90">
-                AI-verified journeys that build trust
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="w-16 h-16 mb-3 flex items-center justify-center">
-                <Handshake className="w-10 h-10 text-amber-600 opacity-70" />
-              </div>
-              <h3 className="font-semibold text-teal-800 mb-2">
-                Brand Partnership
-              </h3>
-              <p className="text-sm text-teal-700/90">
-                Flexible collaboration models
-              </p>
-            </div>
+            ))}
           </div>
-
-          <p className="text-teal-700/90 leading-relaxed">
-            Creators choose how they share their experience with your product: a{" "}
-            <span className="text-amber-600">VeeVu™</span> preview and an{" "}
-            <span className="text-amber-600">iGlo™</span> journey.
-          </p>
-          <ul className="mt-4 space-y-2 text-teal-700/90">
-            <li>
-              • VeeVu™ — short product previews designed for quick discovery and
-              decision-making.
-            </li>
-            <li>
-              • iGlo™ — authentic, AI-verified reviews and full journey logs
-              that build lasting trust.
-            </li>
-            <li>
-              • Different uploads, different outcomes — the hook and the proof
-            </li>
-          </ul>
         </div>
       </section>
-
       <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
         <div className="max-w-5xl mx-auto bg-white rounded-xl p-6 border border-amber-300/20">
           <h2 className="text-3xl font-bold italic text-teal-800 mb-6 text-center">
@@ -145,11 +123,20 @@ export default function BrandPage() {
               <Shield className="w-14 h-14 text-amber-600 opacity-60" />
             </div>
           </div>
-          <ul className="space-y-3 text-xl text-teal-700/90">
-            <li>• Consent-first licensing with transparent terms</li>
-            <li>• Real creators, real results — no gimmicks, no scripts</li>
-            <li>
-              • Māori-led platform welcoming all cultures with open hearts
+          <ul className="space-y-4 text-teal-700/90">
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+              <span>Consent-first licensing with transparent terms</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+              <span>Real creators, real results — no gimmicks, no scripts</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+              <span>
+                Māori-led platform welcoming all cultures with open hearts
+              </span>
             </li>
           </ul>
         </div>
@@ -221,14 +208,26 @@ export default function BrandPage() {
           </div>
 
           <ul className="space-y-4 text-teal-700/90">
-            <li>
-              • Creator-owned, brand-licensed — flexible durations and
-              placements
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+              <span>
+                Creator-owned, brand-licensed — flexible durations and
+                placements
+              </span>
             </li>
-            <li>• Co-branded — your brand identity alongside the creator</li>
-            <li>• Full buyout — optional by mutual agreement</li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+              <span>
+                Co-branded — your brand identity alongside the creator
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+              <span>Full buyout — optional by mutual agreement</span>
+            </li>
           </ul>
-          <p className="mt-6 text-center italic text-amber-600">
+          <p className="mt-6 text-center italic text-amber-600 flex items-center justify-center gap-2">
+            <Heart className="w-5 h-5" />
             All options uphold creator rights, cultural respect, and transparent
             usage.
           </p>
