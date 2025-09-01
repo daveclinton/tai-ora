@@ -14,7 +14,6 @@ import {
   Shield,
   CheckCircle,
   Heart,
-  Globe,
 } from "lucide-react";
 
 export default function BrandPage() {
@@ -239,7 +238,6 @@ export default function BrandPage() {
           </p>
         </div>
       </section>
-
       <JoinWaitlist />
     </section>
   );

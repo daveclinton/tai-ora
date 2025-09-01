@@ -1,6 +1,14 @@
 import { GoldenLink } from "@/components/golden-link";
 import { Button } from "@/components/ui/button";
-import { Eye, Heart, Upload } from "lucide-react";
+import {
+  Eye,
+  FileText,
+  Handshake,
+  Heart,
+  Megaphone,
+  Upload,
+  Users,
+} from "lucide-react";
 import Image from "next/image";
 
 export default function CreatorPage() {
@@ -42,27 +50,29 @@ export default function CreatorPage() {
               {[
                 {
                   title: "Share your authentic journey and voice",
-                  icon: "🗣️",
+                  icon: <Megaphone className="w-6 h-6 text-amber-600" />,
                 },
                 {
                   title: "Build ownership of your story and content",
-                  icon: "📝",
+                  icon: <FileText className="w-6 h-6 text-amber-600" />,
                 },
                 {
                   title:
                     "Earn opportunities through ethical brand partnerships",
-                  icon: "💼",
+                  icon: <Handshake className="w-6 h-6 text-amber-600" />,
                 },
                 {
                   title: "Help people make better, more informed choices",
-                  icon: "🤝",
+                  icon: <Users className="w-6 h-6 text-amber-600" />,
                 },
               ].map((item, i) => (
                 <div
                   key={i}
                   className="flex items-start gap-4 p-4 bg-amber-100/10 rounded-lg"
                 >
-                  <span className="text-2xl">{item.icon}</span>
+                  <div className="w-8 h-8 flex items-center justify-center rounded-full bg-amber-100 p-1">
+                    {item.icon}
+                  </div>
                   <p className="text-teal-700 text-lg">{item.title}</p>
                 </div>
               ))}
@@ -76,49 +86,6 @@ export default function CreatorPage() {
           </GoldenLink>
         </div>
       </section>
-
-      {/* <section className="px-6 py-12">
-        <div className="max-w-5xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
-          <h2 className="text-2xl font-semibold text-teal-800 mb-4">
-            Why Join as a Creator?
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6 mt-6">
-            {[
-              {
-                title: "Earn fairly",
-                desc: "Get compensated for your authentic content and reviews",
-                src: "/earn.svg",
-              },
-              {
-                title: "Exclusive exposure",
-                desc: "Gain visibility with brands seeking genuine recommendations",
-                src: "/visibility.svg",
-              },
-              {
-                title: "Supportive community",
-                desc: "Join a network of like-minded creators focused on wellbeing",
-                src: "/team-spirit.svg",
-              },
-            ].map((benefit, i) => (
-              <div key={i} className="text-center p-4">
-                <div className="w-48 h-48 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4 overflow-hidden">
-                  <Image
-                    src={benefit.src}
-                    alt={benefit.title}
-                    width={100}
-                    height={100}
-                    className="h-32 w-32 object-contain"
-                  />
-                </div>
-                <h3 className="font-semibold text-xl text-teal-800 mb-2">
-                  {benefit.title}
-                </h3>
-                <p className="text-teal-700/90 text-lg">{benefit.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       <section className="px-6 py-12">
         <div className="max-w-5xl mx-auto">
@@ -330,36 +297,6 @@ export default function CreatorPage() {
           </div>
         </div>
       </section>
-
-      {/* <section className="px-6 py-12 bg-white/5 backdrop-blur-sm border-t border-amber-300/20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold italic text-amber-300 text-center mb-8">
-            Benefits
-          </h2>
-          <ul className="space-y-4 text-teal-100/90">
-            <li>
-              • Monetise your real product experiences through both previews and
-              full journeys
-            </li>
-            <li>• Stay protected — your content is yours</li>
-            <li>• License verified reviews to brands on your terms</li>
-            <li>
-              • Join a community built on ethics, authenticity and inclusivity
-            </li>
-          </ul>
-          <div className="text-center mt-10 flex flex-col md:flex-row gap-6 justify-center">
-            <GoldenLink href="/" className="text-base text-white py-4 lg:py-0">
-              Apply Now
-            </GoldenLink>
-            <Button
-              variant="outline"
-              className="border-2  border-amber-300 text-white hover:bg-amber-300/20 hover:border-amber-400 font-semibold px-10 py-6 text-lg tracking-wide rounded-lg transition-colors bg-transparent"
-            >
-              Learn More
-            </Button>
-          </div>
-        </div>
-      </section> */}
     </section>
   );
 }
