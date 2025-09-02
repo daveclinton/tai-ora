@@ -11,16 +11,12 @@ interface ContactFormData {
 export async function POST(request: NextRequest) {
   try {
     const body: ContactFormData = await request.json();
-
-    // Validate required fields
     if (!body.name || !body.email || !body.message) {
       return NextResponse.json(
         { error: "Name, email, and message are required fields" },
         { status: 400 }
       );
     }
-
-    // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(body.email)) {
       return NextResponse.json(
@@ -29,7 +25,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create transporter
     const transporter = nodemailer.createTransport({
       host: "in-v3.mailjet.com",
       port: 587,
@@ -40,7 +35,6 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    // Email to Tai Ora
     const adminMailOptions = {
       from: "contact@taiora.ai",
       to: "tai-ora@outlook.com",
@@ -65,9 +59,8 @@ export async function POST(request: NextRequest) {
       `,
     };
 
-    // Confirmation email to user
     const confirmationMailOptions = {
-      from: "partner@taiora.ai",
+      from: "contact@taiora.ai",
       to: body.email,
       subject: "Thank you for contacting Tai Ora",
       html: `
@@ -89,11 +82,9 @@ export async function POST(request: NextRequest) {
       `,
     };
 
-    // Send both emails
     await transporter.sendMail(adminMailOptions);
     await transporter.sendMail(confirmationMailOptions);
 
-    // Log the contact form submission
     console.log("New contact form submission:", {
       name: body.name,
       email: body.email,
