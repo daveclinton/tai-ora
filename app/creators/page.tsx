@@ -1,3 +1,4 @@
+"use client";
 import { GoldenLink } from "@/components/golden-link";
 import { Button } from "@/components/ui/button";
 import {
@@ -8,10 +9,68 @@ import {
   Megaphone,
   Upload,
   Users,
+  CheckCircle,
+  Loader2,
 } from "lucide-react";
 import Image from "next/image";
+import { ChangeEvent, useState } from "react";
 
 export default function CreatorPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    socialMedia: "",
+    reason: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("");
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.reason) {
+      setSubmitStatus("error");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus("");
+
+    try {
+      const response = await fetch("/api/creator", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", socialMedia: "", reason: "" });
+      } else {
+        const errorData = await response.json();
+        console.error("Application error:", errorData.error);
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70">
       <div className="relative min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20">
@@ -245,23 +304,62 @@ export default function CreatorPage() {
           </p>
 
           <div className="mx-auto lg:max-w-[70%] bg-white rounded-lg p-6 mb-6">
-            <form className="space-y-4">
+            {submitStatus === "success" && (
+              <div className="mb-6 p-4 bg-green-50 border-2 border-green-200 rounded-lg">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <p className="text-green-800 font-semibold">
+                    Kia ora! Your application has been submitted successfully.
+                  </p>
+                </div>
+                <p className="text-green-700 mt-2 text-sm">
+                  We'll review your application and get back to you within 5-7
+                  business days.
+                </p>
+              </div>
+            )}
+
+            {submitStatus === "error" && (
+              <div className="mb-6 p-4 bg-red-50 border-2 border-red-200 rounded-lg">
+                <p className="text-red-800 font-semibold">
+                  Sorry, there was an error submitting your application.
+                </p>
+                <p className="text-red-700 mt-2 text-sm">
+                  Please check that all required fields are filled and try
+                  again.
+                </p>
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-teal-800 text-md font-medium mb-1">
-                  Name
+                  Name *
                 </label>
                 <input
                   type="text"
-                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  disabled={isSubmitting}
+                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400 disabled:opacity-50 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 transition-all"
+                  placeholder="Your full name"
                 />
               </div>
               <div>
                 <label className="block text-teal-800 text-md font-medium mb-1">
-                  Email
+                  Email *
                 </label>
                 <input
                   type="email"
-                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  disabled={isSubmitting}
+                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400 disabled:opacity-50 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 transition-all"
+                  placeholder="your.email@example.com"
                 />
               </div>
               <div>
@@ -270,21 +368,41 @@ export default function CreatorPage() {
                 </label>
                 <input
                   type="text"
-                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400"
-                  placeholder="Link"
+                  name="socialMedia"
+                  value={formData.socialMedia}
+                  onChange={handleInputChange}
+                  disabled={isSubmitting}
+                  className="w-full p-2 border border-teal-300 rounded text-teal-900 placeholder-teal-400 disabled:opacity-50 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 transition-all"
+                  placeholder="Instagram, TikTok, YouTube, etc."
                 />
               </div>
               <div>
                 <label className="block text-teal-800 text-md font-medium mb-1">
-                  Why you want to join
+                  Why you want to join *
                 </label>
                 <textarea
-                  className="w-full p-2 border border-teal-300 rounded h-24 text-teal-900 placeholder-teal-400"
-                  placeholder="Tell us why..."
+                  name="reason"
+                  value={formData.reason}
+                  onChange={handleInputChange}
+                  required
+                  disabled={isSubmitting}
+                  className="w-full p-2 border border-teal-300 rounded h-24 text-teal-900 placeholder-teal-400 disabled:opacity-50 focus:border-amber-400 focus:ring-2 focus:ring-amber-200 transition-all resize-none"
+                  placeholder="Tell us about your passion for authentic reviews and why you'd like to be part of the Tai Ora creator community..."
                 ></textarea>
               </div>
-              <Button className="bg-amber-400 w-full lg:w-1/2  text-white hover:bg-amber-300 font-semibold py-3">
-                Submit Application
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="bg-amber-400 w-full lg:w-1/2 text-white hover:bg-amber-300 font-semibold py-3 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+              >
+                {isSubmitting ? (
+                  <div className="flex items-center justify-center gap-2">
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Submitting...
+                  </div>
+                ) : (
+                  "Submit Application"
+                )}
               </Button>
             </form>
           </div>
