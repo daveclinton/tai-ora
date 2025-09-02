@@ -5,7 +5,7 @@ import { GoldenLink } from "./golden-link";
 const JoinWaitlist = () => {
   return (
     <div className="w-full py-16 px-6 bg-gradient-to-r from-amber-500/20 to-teal-600/30">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto my-16 px-6 text-center space-y-10">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 italic">
           Join Our Waitlist
         </h2>
