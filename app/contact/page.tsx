@@ -1,6 +1,55 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      enquiryType: formData.get("enquiry-type") as string,
+      message: formData.get("message") as string,
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({ type: "success", message: result.message });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setSubmitStatus({ type: "error", message: result.error });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Failed to send message. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70 min-h-screen">
       <div className="relative flex flex-col justify-center items-center text-center px-6 py-20">
@@ -17,14 +66,26 @@ export default function ContactPage() {
           Let's connect
         </h1>
         <p className="text-teal-100 max-w-2xl text-lg leading-relaxed mb-10">
-          We'd love to hear from you ,whether you're curious about Tai Ora, want
+          We'd love to hear from you, whether you're curious about Tai Ora, want
           to collaborate, or just want to say kia ora.
         </p>
       </div>
 
       <section className="px-6 py-8">
         <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 border border-amber-300/20 shadow-lg">
-          <form className="space-y-6">
+          {submitStatus.type && (
+            <div
+              className={`mb-6 p-4 rounded-lg ${
+                submitStatus.type === "success"
+                  ? "bg-green-100 text-green-800"
+                  : "bg-red-100 text-red-800"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
+
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label
                 htmlFor="name"
@@ -97,8 +158,12 @@ export default function ContactPage() {
             </div>
 
             <div className="pt-4">
-              <Button className="w-full text-base bg-yellow-500 text-white py-4">
-                Send Message
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full text-base bg-yellow-500 text-white py-4 hover:bg-yellow-600 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </div>
           </form>
