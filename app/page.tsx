@@ -44,10 +44,10 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col gap-4 justify-center">
-              <div>
+              <div className="w-full max-w-xs mx-auto">
                 <GoldenLink
                   href="/creators"
-                  className="text-lg text-white px-10 py-3 cursor-pointer w-full flex justify-center"
+                  className="text-lg text-white px-10 py-3 cursor-pointer w-full flex justify-center items-center h-14"
                 >
                   I'M A CREATOR
                 </GoldenLink>
@@ -55,10 +55,10 @@ export default function Home() {
                   Share your authentic journey and voice.
                 </p>
               </div>
-              <div>
+              <div className="w-full max-w-xs mx-auto">
                 <SecondaryLink
                   href="/brand"
-                  className="text-lg px-10 py-3 cursor-pointer w-full flex justify-center"
+                  className="text-lg px-10 py-3 cursor-pointer w-full flex justify-center items-center h-14"
                 >
                   I'M A BRAND
                 </SecondaryLink>
@@ -101,10 +101,10 @@ export default function Home() {
                 help people choose with confidence.
               </p>
               <div className="flex flex-row gap-6 justify-center">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center w-64">
                   <GoldenLink
                     href="/creators"
-                    className="text-lg text-white px-10 py-3"
+                    className="text-lg text-white px-10 py-3 w-full h-14 flex items-center justify-center"
                   >
                     I'M A CREATOR
                   </GoldenLink>
@@ -112,8 +112,11 @@ export default function Home() {
                     Share your authentic journey and voice.
                   </p>
                 </div>
-                <div className="flex flex-col items-center">
-                  <SecondaryLink href="/brand" className="text-lg px-10 py-3">
+                <div className="flex flex-col items-center w-64">
+                  <SecondaryLink
+                    href="/brand"
+                    className="text-lg px-10 py-3 w-full h-14 flex items-center justify-center"
+                  >
                     I'M A BRAND
                   </SecondaryLink>
                   <p className="text-white text-sm mt-2 text-center">
@@ -126,6 +129,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Rest of the code remains the same */}
       <div className="w-full">
         <svg
           viewBox="0 0 1200 120"

@@ -24,9 +24,6 @@ export function Footer() {
 
           {/* Navigation column */}
           <div className="md:col-span-3 md:col-start-6">
-            <h3 className="text-amber-300 font-semibold text-lg mb-5 text-center md:text-left">
-              Navigation
-            </h3>
             <ul className="flex flex-col items-center md:items-start gap-4 text-white">
               <li>
                 <a
