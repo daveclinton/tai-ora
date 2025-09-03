@@ -168,7 +168,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 mt-12">
             <div className="relative inline-block">
               <Image
-                className="inline-block size-32 rounded-full bg-teal-800 border-2 border-amber-300 p-1"
+                className="size-64 rounded-full object-cover bg-teal-800 border-2 border-amber-300 p-1"
                 src="/founder.png"
                 alt="Avatar"
                 width={200}
