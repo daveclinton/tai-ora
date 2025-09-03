@@ -162,11 +162,13 @@ export default function PartnerPage() {
     <div className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70 min-h-screen">
       {/* Hero Section */}
       <div className="relative min-h-[60vh] flex flex-col justify-center items-center text-center px-6 py-20">
-        <div className="w-36 h-36 rounded-full flex items-center justify-center overflow-hidden relative shadow-2xl shadow-amber-400/40 ring-4 ring-amber-300/30 mx-auto mb-8 bg-gradient-to-br from-amber-400/20 to-teal-400/20 backdrop-blur-sm">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-pulse"></div>
-          <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center relative z-10">
-            <span className="text-3xl font-bold text-teal-800">TO</span>
-          </div>
+        <div className="w-36 h-36 rounded-full flex items-center justify-center overflow-hidden animate-heartbeat relative shadow-lg shadow-amber-400/70 ring-2 ring-amber-300/50 mx-auto mb-6">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-400/30 to-teal-400/30 animate-ping-slow"></div>
+          <img
+            src="/logo.png"
+            alt="Tai Ora logo"
+            className="w-full h-full object-cover relative z-10"
+          />
         </div>
 
         <h1 className="text-white text-5xl md:text-6xl font-bold italic mb-6 leading-tight tracking-wide drop-shadow-2xl">
