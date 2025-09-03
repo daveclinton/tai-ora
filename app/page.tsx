@@ -1,9 +1,8 @@
 import { GoldenLink } from "@/components/golden-link";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import JoinWaitlist from "@/components/join-waitlist";
 import { SecondaryLink } from "@/components/secondary-link";
-
+import Image from "next/image";
 export default function Home() {
   return (
     <section className="flex flex-col bg-gradient-to-br from-teal-800/90 via-teal-700/80 to-cyan-900/70">
@@ -167,10 +166,15 @@ export default function Home() {
           </p>
 
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 mt-12">
-            <Avatar className="w-48 h-48 overflow-hidden border-4 border-amber-300/30 shadow-lg">
-              <AvatarImage src="/profile.png" />
-              <AvatarFallback>TP</AvatarFallback>
-            </Avatar>
+            <div className="relative inline-block">
+              <Image
+                className="inline-block size-32 rounded-full bg-teal-800 border-2 border-amber-300 p-1"
+                src="/founder.png"
+                alt="Avatar"
+                width={200}
+                height={200}
+              />
+            </div>
             <div className="flex-1 text-center md:text-left">
               <blockquote className="text-white text-xl italic mb-4 leading-relaxed">
                 "Tai Ora is designed to help people feel seen, supported and
