@@ -198,7 +198,7 @@ export default function PartnerPage() {
 
       {/* Meaning Section */}
       <section className="px-6 py-12">
-        <div className="max-w-5xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/20 shadow-xl text-center">
+        <div className="max-w-6xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-8 border border-amber-300/20 shadow-xl text-center">
           <div className="flex items-center justify-center gap-4 mb-6">
             <Sparkles className="w-8 h-8 text-amber-600" />
             <h2 className="text-2xl font-semibold text-teal-800">
@@ -329,7 +329,7 @@ export default function PartnerPage() {
 
       {/* Vision & Impact Section */}
       <section className="px-6 py-16 bg-black/10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-12">
             <TrendingUp className="w-10 h-10 text-amber-300" />
             <h2 className="text-4xl font-bold italic text-amber-300 text-center">
