@@ -123,7 +123,7 @@ export function Footer() {
         {/* Copyright section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-4 border-t border-amber-300/20">
           <div className="text-white text-sm text-center md:text-left order-2 md:order-1">
-            <p>© {year} Tai Ora Pty Ltd. All rights reserved.</p>
+            <p>© Tai Ora {year}. Patent Pending</p>
           </div>
           <div className="order-1 md:order-2">
             <a
